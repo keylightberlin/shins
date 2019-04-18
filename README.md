@@ -1,3 +1,13 @@
+# howto
+
+```
+npm install -g  widdershins
+widdershins --search false --language_tabs 'go:Go' 'http:HTTP' 'ruby:Ruby' 'python:Python' --summary swagger_Frontend.yml -o source/index.html.md
+node shins.js
+```
+
+
+
 # shins
 
 ### Shins Is Not Slate
