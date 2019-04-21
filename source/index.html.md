@@ -379,7 +379,12 @@ print r.json()
 {
   "id": "string",
   "type": "string",
-  "data": {}
+  "credit_card_number": "string",
+  "credit_card_holder": "string",
+  "credit_card_expiration_month": 0,
+  "credit_card_expiration_year": 0,
+  "iban": "string",
+  "bank_account_holder": "string"
 }
 ```
 
@@ -476,14 +481,11 @@ print r.json()
 
 ```json
 {
-  "id": "string",
   "type": "string",
-  "creditCardNumber": "string",
-  "creditCardHolder": "string",
-  "creditCardExpirationMonth": 0,
-  "creditCardExpirationYear": 0,
-  "iban": "string",
-  "bankAccountHolder": "string"
+  "data": {
+    "id": "string",
+    "token": "string"
+  }
 }
 ```
 
@@ -606,8 +608,8 @@ print r.json()
 [
   {
     "payment_amount": 0,
-    "invoice_date": "2019-04-18",
-    "due_date": "2019-04-18",
+    "invoice_date": "2019-04-21",
+    "due_date": "2019-04-21",
     "tax_amount": 0,
     "amount": 0,
     "balance": 0,
@@ -1003,7 +1005,7 @@ print r.json()
           ]
         }
       ],
-      "current_end_date": "2019-04-18"
+      "current_end_date": "2019-04-21"
     },
     "quantity": 0,
     "rate_plans": [
@@ -1536,7 +1538,7 @@ print r.json()
           ]
         }
       ],
-      "current_end_date": "2019-04-18"
+      "current_end_date": "2019-04-21"
     },
     "id": "string",
     "product_id": "string",
@@ -1790,14 +1792,11 @@ print r.json()
 
 ```json
 {
-  "id": "string",
   "type": "string",
-  "creditCardNumber": "string",
-  "creditCardHolder": "string",
-  "creditCardExpirationMonth": 0,
-  "creditCardExpirationYear": 0,
-  "iban": "string",
-  "bankAccountHolder": "string"
+  "data": {
+    "id": "string",
+    "token": "string"
+  }
 }
 ```
 
@@ -2123,49 +2122,49 @@ print r.json()
 
 ```json
 {
-  "billToContact": {
+  "bill_to_contact": {
     "address1": "string",
     "address2": "string",
     "city": "string",
     "country": "string",
     "county": "string",
     "fax": "string",
-    "firstName": "string",
-    "lastName": "string",
+    "first_name": "string",
+    "last_name": "string",
     "state": "string",
-    "taxRegion": "string",
-    "workEmail": "string",
-    "workPhone": "string",
-    "zipCode": "string"
+    "tax_region": "string",
+    "work_email": "string",
+    "work_phone": "string",
+    "zip_code": "string"
   },
   "currency": "string",
   "name": "string",
-  "quoteNumber": "string",
-  "ratePlans": [
+  "quote_number": "string",
+  "rate_plans": [
     {
       "id": "string",
       "type": "string"
     }
   ],
-  "soldToContact": {
+  "sold_to_contact": {
     "address1": "string",
     "address2": "string",
     "city": "string",
     "country": "string",
     "county": "string",
     "fax": "string",
-    "firstName": "string",
-    "lastName": "string",
+    "first_name": "string",
+    "last_name": "string",
     "state": "string",
-    "taxRegion": "string",
-    "workEmail": "string",
-    "workPhone": "string",
-    "zipCode": "string"
+    "tax_region": "string",
+    "work_email": "string",
+    "work_phone": "string",
+    "zip_code": "string"
   },
-  "startDate": "2019-04-18",
+  "start_date": "2019-04-21",
   "term": "string",
-  "validUntiDate": "2019-04-18",
-  "vatId": "string"
+  "valid_until_date": "2019-04-21",
+  "vat_id": "string"
 }
 ```
 
@@ -2182,31 +2181,31 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» billToContact|object|false|none|none|
+|» bill_to_contact|object|false|none|none|
 |»» address1|string|false|none|none|
 |»» address2|string|false|none|none|
 |»» city|string|false|none|none|
 |»» country|string|false|none|none|
 |»» county|string|false|none|none|
 |»» fax|string|false|none|none|
-|»» firstName|string|false|none|none|
-|»» lastName|string|false|none|none|
+|»» first_name|string|false|none|none|
+|»» last_name|string|false|none|none|
 |»» state|string|false|none|none|
-|»» taxRegion|string|false|none|none|
-|»» workEmail|string|false|none|none|
-|»» workPhone|string|false|none|none|
-|»» zipCode|string|false|none|none|
+|»» tax_region|string|false|none|none|
+|»» work_email|string|false|none|none|
+|»» work_phone|string|false|none|none|
+|»» zip_code|string|false|none|none|
 |» currency|string|false|none|none|
 |» name|string|false|none|none|
-|» quoteNumber|string|false|none|none|
-|» ratePlans|[[RatePlan](#schemarateplan)]|false|none|none|
+|» quote_number|string|false|none|none|
+|» rate_plans|[[RatePlan](#schemarateplan)]|false|none|none|
 |»» id|string|false|none|none|
 |»» type|string|false|none|none|
-|» soldToContact|object|false|none|none|
-|» startDate|string(date)|false|none|none|
+|» sold_to_contact|object|false|none|none|
+|» start_date|string(date)|false|none|none|
 |» term|string|false|none|none|
-|» validUntiDate|string(date)|false|none|none|
-|» vatId|string|false|none|none|
+|» valid_until_date|string(date)|false|none|none|
+|» vat_id|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -2320,7 +2319,7 @@ This operation does not require authentication
 
 <h1 id="subscription-suite-api-product-catalog">product-catalog</h1>
 
-Fetching and managing the Zuora product catalog
+Fetching the Zuora product catalog
 
 ## Get all Zuora products
 
@@ -2446,6 +2445,114 @@ This operation does not require authentication
 
 ## Get a Zuora product
 
+<a id="opIdgetProductById"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "/product/{id}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+GET /product/{id} HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.get '/product/{id}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.get('/product/{id}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`GET /product/{id}`
+
+<h3 id="get-a-zuora-product-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer|true|The ID of a Subscription Suite product|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "zuora_id": "string",
+  "name": "string",
+  "description": "string",
+  "feature_list": "string",
+  "highlight": "string",
+  "effective_start_date": "string",
+  "effective_end_date": "string",
+  "sku": "string",
+  "updated_date": "string",
+  "tenant_id": 0
+}
+```
+
+<h3 id="get-a-zuora-product-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Delete a Zuora product
+
 <a id="opIddeleteProductById"></a>
 
 > Code samples
@@ -2515,7 +2622,7 @@ print r.json()
 
 `DELETE /product/{id}`
 
-<h3 id="get-a-zuora-product-parameters">Parameters</h3>
+<h3 id="delete-a-zuora-product-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -2541,659 +2648,7 @@ print r.json()
 }
 ```
 
-<h3 id="get-a-zuora-product-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-## Preview of Cancel Operation
-
-<a id="opIdproductPreviewCancel"></a>
-
-> Code samples
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/product/{id}/preview/cancel", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-```http
-GET /product/{id}/preview/cancel HTTP/1.1
-
-Accept: application/json
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json'
-}
-
-result = RestClient.get '/product/{id}/preview/cancel',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json'
-}
-
-r = requests.get('/product/{id}/preview/cancel', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-`GET /product/{id}/preview/cancel`
-
-<h3 id="preview-of-cancel-operation-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer|true|The ID of a Subscription Suite product|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "id": 0,
-  "zuora_id": "string",
-  "name": "string",
-  "description": "string",
-  "feature_list": "string",
-  "highlight": "string",
-  "effective_start_date": "string",
-  "effective_end_date": "string",
-  "sku": "string",
-  "updated_date": "string",
-  "tenant_id": 0
-}
-```
-
-<h3 id="preview-of-cancel-operation-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-## Preview of Replace Operation
-
-<a id="opIdproductPreviewReplace"></a>
-
-> Code samples
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/product/{id}/preview/replace/{changeOptionId}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-```http
-GET /product/{id}/preview/replace/{changeOptionId} HTTP/1.1
-
-Accept: application/json
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json'
-}
-
-result = RestClient.get '/product/{id}/preview/replace/{changeOptionId}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json'
-}
-
-r = requests.get('/product/{id}/preview/replace/{changeOptionId}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-`GET /product/{id}/preview/replace/{changeOptionId}`
-
-<h3 id="preview-of-replace-operation-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer|true|The ID of a Subscription Suite product|
-|changeOptionId|path|integer|true|The ID of a Subscription Change Option|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "id": 0,
-  "zuora_id": "string",
-  "name": "string",
-  "description": "string",
-  "feature_list": "string",
-  "highlight": "string",
-  "effective_start_date": "string",
-  "effective_end_date": "string",
-  "sku": "string",
-  "updated_date": "string",
-  "tenant_id": 0
-}
-```
-
-<h3 id="preview-of-replace-operation-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-## Replace Operation
-
-<a id="opIdproductReplace"></a>
-
-> Code samples
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/product/{id}/replace/{changeOptionId}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-```http
-GET /product/{id}/replace/{changeOptionId} HTTP/1.1
-
-Accept: application/json
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json'
-}
-
-result = RestClient.get '/product/{id}/replace/{changeOptionId}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json'
-}
-
-r = requests.get('/product/{id}/replace/{changeOptionId}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-`GET /product/{id}/replace/{changeOptionId}`
-
-<h3 id="replace-operation-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer|true|The ID of a Subscription Suite product|
-|changeOptionId|path|integer|true|The ID of a Subscription Change Option|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "id": 0,
-  "zuora_id": "string",
-  "name": "string",
-  "description": "string",
-  "feature_list": "string",
-  "highlight": "string",
-  "effective_start_date": "string",
-  "effective_end_date": "string",
-  "sku": "string",
-  "updated_date": "string",
-  "tenant_id": 0
-}
-```
-
-<h3 id="replace-operation-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-## Initilization of Change Quantity Operation
-
-<a id="opIdinitProductChangeQuantity"></a>
-
-> Code samples
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/product/{id}/preview/change-quantity", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-```http
-GET /product/{id}/preview/change-quantity HTTP/1.1
-
-Accept: application/json
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json'
-}
-
-result = RestClient.get '/product/{id}/preview/change-quantity',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json'
-}
-
-r = requests.get('/product/{id}/preview/change-quantity', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-`GET /product/{id}/preview/change-quantity`
-
-<h3 id="initilization-of-change-quantity-operation-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer|true|The ID of a Subscription Suite product|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "id": 0,
-  "zuora_id": "string",
-  "name": "string",
-  "description": "string",
-  "feature_list": "string",
-  "highlight": "string",
-  "effective_start_date": "string",
-  "effective_end_date": "string",
-  "sku": "string",
-  "updated_date": "string",
-  "tenant_id": 0
-}
-```
-
-<h3 id="initilization-of-change-quantity-operation-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-## Preview of Change Quantity Operation
-
-<a id="opIdpreviewProductChangeQuantity"></a>
-
-> Code samples
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/product/{id}/preview/change-quantity/{quantity}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-```http
-GET /product/{id}/preview/change-quantity/{quantity} HTTP/1.1
-
-Accept: application/json
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json'
-}
-
-result = RestClient.get '/product/{id}/preview/change-quantity/{quantity}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json'
-}
-
-r = requests.get('/product/{id}/preview/change-quantity/{quantity}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-`GET /product/{id}/preview/change-quantity/{quantity}`
-
-<h3 id="preview-of-change-quantity-operation-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer|true|The ID of a Subscription Suite product|
-|quantity|path|integer|true|Product Quantity|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "id": 0,
-  "zuora_id": "string",
-  "name": "string",
-  "description": "string",
-  "feature_list": "string",
-  "highlight": "string",
-  "effective_start_date": "string",
-  "effective_end_date": "string",
-  "sku": "string",
-  "updated_date": "string",
-  "tenant_id": 0
-}
-```
-
-<h3 id="preview-of-change-quantity-operation-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-## Change Quantity Operation
-
-<a id="opIdProductChangeQuantity"></a>
-
-> Code samples
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "/product/{id}/quantity/{quantity}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-```http
-PUT /product/{id}/quantity/{quantity} HTTP/1.1
-
-Accept: application/json
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json'
-}
-
-result = RestClient.put '/product/{id}/quantity/{quantity}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json'
-}
-
-r = requests.put('/product/{id}/quantity/{quantity}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-`PUT /product/{id}/quantity/{quantity}`
-
-<h3 id="change-quantity-operation-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer|true|The ID of a Subscription Suite product|
-|quantity|path|integer|true|Product Quantity|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "id": 0,
-  "zuora_id": "string",
-  "name": "string",
-  "description": "string",
-  "feature_list": "string",
-  "highlight": "string",
-  "effective_start_date": "string",
-  "effective_end_date": "string",
-  "sku": "string",
-  "updated_date": "string",
-  "tenant_id": 0
-}
-```
-
-<h3 id="change-quantity-operation-responses">Responses</h3>
+<h3 id="delete-a-zuora-product-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -3291,71 +2746,71 @@ print r.json()
 
 ```json
 {
-  "allowVoucher": true,
+  "allow_voucher": true,
   "description": "string",
   "id": 0,
-  "isActive": true,
-  "isCart": true,
+  "is_active": true,
+  "is_cart": true,
   "name": "string",
-  "pageId": 0,
-  "showCart": true,
+  "page_id": 0,
+  "show_cart": true,
   "steps": [
     {
       "description": "string",
-      "hasUniqueSelection": true,
+      "has_unique_selection": true,
       "id": 0,
-      "isOptional": true,
+      "is_optional": true,
       "name": "string",
       "number": 0,
-      "ratePlans": [
+      "rate_plans": [
         {
           "description": "string",
-          "effectiveEndDate": "string",
-          "effectiveStartDate": "string",
-          "featureList": "string",
+          "effective_end_date": "string",
+          "effective_start_date": "string",
+          "feature_list": "string",
           "highlight": "string",
           "id": 0,
           "name": "string",
           "product": {
             "description": "string",
-            "effectiveEndDate": "string",
-            "effectiveStartDate": "string",
+            "effective_end_date": "string",
+            "effective_start_date": "string",
             "name": "string",
             "sku": "string"
           },
-          "productRatePlanCharges": [
+          "product_rate_plan_charges": [
             {
-              "billingPeriod": "string",
-              "billingTiming": "string",
-              "chargeModel": "string",
-              "chargeType": "string",
-              "defaultQuantity": 0,
+              "billing_period": "string",
+              "billing_timing": "string",
+              "charge_model": "string",
+              "charge_type": "string",
+              "default_quantity": 0,
               "description": "string",
               "id": 0,
               "name": "string",
-              "productRatePlanChargeTiers": [
+              "product_rate_plan_charge_tiers": [
                 {
                   "currency": "string",
-                  "endingUnit": "string",
-                  "isOveragePrice": true,
+                  "ending_unit": "string",
+                  "is_overage_price": true,
                   "price": 0,
-                  "priceFormat": "string",
-                  "startingUnit": "string"
+                  "price_format": "string",
+                  "starting_unit": "string"
                 }
               ],
-              "taxMode": "string",
-              "isTaxable": true,
+              "tax_mode": "string",
+              "is_taxable": true,
               "uom": "string"
             }
           ]
         }
       ],
-      "showCharges": true,
-      "showDescription": true,
-      "showFeatureList": true,
-      "showPeriods": true,
-      "showProductName": true,
-      "showRatePlanName": true
+      "show_charges": true,
+      "show_description": true,
+      "show_featureList": true,
+      "show_periods": true,
+      "show_product_name": true,
+      "show_rate_plan_name": true
     }
   ]
 }
@@ -3374,60 +2829,60 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» allowVoucher|boolean|false|none|none|
+|» allow_voucher|boolean|false|none|none|
 |» description|string|false|none|none|
 |» id|integer|false|none|none|
-|» isActive|boolean|false|none|none|
-|» isCart|boolean|false|none|none|
+|» is_active|boolean|false|none|none|
+|» is_cart|boolean|false|none|none|
 |» name|string|false|none|none|
-|» pageId|integer|false|none|none|
-|» showCart|boolean|false|none|none|
+|» page_id|integer|false|none|none|
+|» show_cart|boolean|false|none|none|
 |» steps|[object]|false|none|none|
 |»» description|string|false|none|none|
-|»» hasUniqueSelection|boolean|false|none|none|
+|»» has_unique_selection|boolean|false|none|none|
 |»» id|integer|false|none|none|
-|»» isOptional|boolean|false|none|none|
+|»» is_optional|boolean|false|none|none|
 |»» name|string|false|none|none|
 |»» number|integer|false|none|none|
-|»» ratePlans|[object]|false|none|none|
+|»» rate_plans|[object]|false|none|none|
 |»»» description|string|false|none|none|
-|»»» effectiveEndDate|string|false|none|none|
-|»»» effectiveStartDate|string|false|none|none|
-|»»» featureList|string|false|none|none|
+|»»» effective_end_date|string|false|none|none|
+|»»» effective_start_date|string|false|none|none|
+|»»» feature_list|string|false|none|none|
 |»»» highlight|string|false|none|none|
 |»»» id|integer|false|none|none|
 |»»» name|string|false|none|none|
 |»»» product|object|false|none|none|
 |»»»» description|string|false|none|none|
-|»»»» effectiveEndDate|string|false|none|none|
-|»»»» effectiveStartDate|string|false|none|none|
+|»»»» effective_end_date|string|false|none|none|
+|»»»» effective_start_date|string|false|none|none|
 |»»»» name|string|false|none|none|
 |»»»» sku|string|false|none|none|
-|»»» productRatePlanCharges|[object]|false|none|none|
-|»»»» billingPeriod|string|false|none|none|
-|»»»» billingTiming|string|false|none|none|
-|»»»» chargeModel|string|false|none|none|
-|»»»» chargeType|string|false|none|none|
-|»»»» defaultQuantity|number|false|none|none|
+|»»» product_rate_plan_charges|[object]|false|none|none|
+|»»»» billing_period|string|false|none|none|
+|»»»» billing_timing|string|false|none|none|
+|»»»» charge_model|string|false|none|none|
+|»»»» charge_type|string|false|none|none|
+|»»»» default_quantity|number|false|none|none|
 |»»»» description|string|false|none|none|
 |»»»» id|number|false|none|none|
 |»»»» name|string|false|none|none|
-|»»»» productRatePlanChargeTiers|[object]|false|none|none|
+|»»»» product_rate_plan_charge_tiers|[object]|false|none|none|
 |»»»»» currency|string|false|none|none|
-|»»»»» endingUnit|string|false|none|none|
-|»»»»» isOveragePrice|boolean|false|none|none|
+|»»»»» ending_unit|string|false|none|none|
+|»»»»» is_overage_price|boolean|false|none|none|
 |»»»»» price|number|false|none|none|
-|»»»»» priceFormat|string|false|none|none|
-|»»»»» startingUnit|string|false|none|none|
-|»»»» taxMode|string|false|none|none|
-|»»»» isTaxable|boolean|false|none|none|
+|»»»»» price_format|string|false|none|none|
+|»»»»» starting_unit|string|false|none|none|
+|»»»» tax_mode|string|false|none|none|
+|»»»» is_taxable|boolean|false|none|none|
 |»»»» uom|string|false|none|none|
-|»»» showCharges|boolean|false|none|none|
-|»»» showDescription|boolean|false|none|none|
-|»»» showFeatureList|boolean|false|none|none|
-|»»» showPeriods|boolean|false|none|none|
-|»»» showProductName|boolean|false|none|none|
-|»»» showRatePlanName|boolean|false|none|none|
+|»»» show_charges|boolean|false|none|none|
+|»»» show_description|boolean|false|none|none|
+|»»» show_featureList|boolean|false|none|none|
+|»»» show_periods|boolean|false|none|none|
+|»»» show_product_name|boolean|false|none|none|
+|»»» show_rate_plan_name|boolean|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -3436,6 +2891,549 @@ This operation does not require authentication
 <h1 id="subscription-suite-api-subscription">subscription</h1>
 
 Preview, create, and modify subscriptions
+
+## Preview of Cancel Operation
+
+<a id="opIdproductPreviewCancel"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "/product/{uuid}/preview/cancel", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+GET /product/{uuid}/preview/cancel HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.get '/product/{uuid}/preview/cancel',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.get('/product/{uuid}/preview/cancel', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`GET /product/{uuid}/preview/cancel`
+
+<h3 id="preview-of-cancel-operation-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|uuid|path|string|true|The UUID of a subscribed Subscription Suite product|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "zuora_id": "string",
+  "name": "string",
+  "description": "string",
+  "feature_list": "string",
+  "highlight": "string",
+  "effective_start_date": "string",
+  "effective_end_date": "string",
+  "sku": "string",
+  "updated_date": "string",
+  "tenant_id": 0
+}
+```
+
+<h3 id="preview-of-cancel-operation-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Preview of Replace Operation
+
+<a id="opIdproductPreviewReplace"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "/product/{uuid}/preview/replace/{changeOptionId}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+GET /product/{uuid}/preview/replace/{changeOptionId} HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.get '/product/{uuid}/preview/replace/{changeOptionId}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.get('/product/{uuid}/preview/replace/{changeOptionId}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`GET /product/{uuid}/preview/replace/{changeOptionId}`
+
+<h3 id="preview-of-replace-operation-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|uuid|path|string|true|The UUID of a subscribed Subscription Suite product|
+|changeOptionId|path|integer|true|The ID of a Subscription Change Option|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "zuora_id": "string",
+  "name": "string",
+  "description": "string",
+  "feature_list": "string",
+  "highlight": "string",
+  "effective_start_date": "string",
+  "effective_end_date": "string",
+  "sku": "string",
+  "updated_date": "string",
+  "tenant_id": 0
+}
+```
+
+<h3 id="preview-of-replace-operation-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Replace Operation
+
+<a id="opIdproductReplace"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "/product/{uuid}/replace/{changeOptionId}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+GET /product/{uuid}/replace/{changeOptionId} HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.get '/product/{uuid}/replace/{changeOptionId}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.get('/product/{uuid}/replace/{changeOptionId}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`GET /product/{uuid}/replace/{changeOptionId}`
+
+<h3 id="replace-operation-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|uuid|path|string|true|The UUID of a subscribed Subscription Suite product|
+|changeOptionId|path|integer|true|The ID of a Subscription Change Option|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "zuora_id": "string",
+  "name": "string",
+  "description": "string",
+  "feature_list": "string",
+  "highlight": "string",
+  "effective_start_date": "string",
+  "effective_end_date": "string",
+  "sku": "string",
+  "updated_date": "string",
+  "tenant_id": 0
+}
+```
+
+<h3 id="replace-operation-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Initilization of Change Quantity Operation
+
+<a id="opIdinitProductChangeQuantity"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "/product/{uuid}/preview/change-quantity", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+GET /product/{uuid}/preview/change-quantity HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.get '/product/{uuid}/preview/change-quantity',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.get('/product/{uuid}/preview/change-quantity', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`GET /product/{uuid}/preview/change-quantity`
+
+<h3 id="initilization-of-change-quantity-operation-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|uuid|path|string|true|The UUID of a subscribed Subscription Suite product|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "zuora_id": "string",
+  "name": "string",
+  "description": "string",
+  "feature_list": "string",
+  "highlight": "string",
+  "effective_start_date": "string",
+  "effective_end_date": "string",
+  "sku": "string",
+  "updated_date": "string",
+  "tenant_id": 0
+}
+```
+
+<h3 id="initilization-of-change-quantity-operation-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Preview of Change Quantity Operation
+
+<a id="opIdpreviewProductChangeQuantity"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "/product/{uuid}/preview/change-quantity/{quantity}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+GET /product/{uuid}/preview/change-quantity/{quantity} HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.get '/product/{uuid}/preview/change-quantity/{quantity}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.get('/product/{uuid}/preview/change-quantity/{quantity}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`GET /product/{uuid}/preview/change-quantity/{quantity}`
+
+<h3 id="preview-of-change-quantity-operation-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|uuid|path|string|true|The UUID of a subscribed Subscription Suite product|
+|quantity|path|integer|true|Product Quantity|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "zuora_id": "string",
+  "name": "string",
+  "description": "string",
+  "feature_list": "string",
+  "highlight": "string",
+  "effective_start_date": "string",
+  "effective_end_date": "string",
+  "sku": "string",
+  "updated_date": "string",
+  "tenant_id": 0
+}
+```
+
+<h3 id="preview-of-change-quantity-operation-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
 
 ## Create new subscriptions for a user
 
@@ -3518,27 +3516,67 @@ print r.json()
 > Body parameter
 
 ```json
-[
-  {
-    "ratePlan": {
+{
+  "suite_products": [
+    {
       "id": 0,
-      "quantity": 0
-    },
-    "charges": [
-      {
-        "id": 0,
-        "quantity": 0
-      }
-    ]
-  }
-]
+      "quantity": 0,
+      "order_pos": 0,
+      "rate_plans": [
+        {
+          "id": 0,
+          "quantity": 0,
+          "charges": [
+            {
+              "id": 0,
+              "quantity": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "account": {
+    "company_name": "string",
+    "currency": "string",
+    "first_name": "string",
+    "last_name": "string",
+    "street": "string",
+    "additional_info": "string",
+    "zip_code": "string",
+    "city": "string",
+    "state": "string",
+    "country": "string",
+    "email": "string",
+    "phone": "string",
+    "vat_id": "string",
+    "has_billing_address": true,
+    "is_company": true,
+    "billing_first_name": "string",
+    "billing_last_name": "string",
+    "billing_street": "string",
+    "billing_additional_info": "string",
+    "billing_zip_code": "string",
+    "billing_city": "string",
+    "billing_country": "string",
+    "billing_email": "string",
+    "billing_phone": "string"
+  },
+  "currency": "string",
+  "voucher_rate_plans": [
+    {
+      "rate_plan_id": 0,
+      "campaign_id": 0
+    }
+  ]
+}
 ```
 
 <h3 id="create-new-subscriptions-for-a-user-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|array[object]|false|none|
+|body|body|[SubscribeOption](#schemasubscribeoption)|false|none|
 
 > Example responses
 
@@ -3652,27 +3690,67 @@ print r.json()
 > Body parameter
 
 ```json
-[
-  {
-    "ratePlan": {
+{
+  "suite_products": [
+    {
       "id": 0,
-      "quantity": 0
-    },
-    "charges": [
-      {
-        "id": 0,
-        "quantity": 0
-      }
-    ]
-  }
-]
+      "quantity": 0,
+      "order_pos": 0,
+      "rate_plans": [
+        {
+          "id": 0,
+          "quantity": 0,
+          "charges": [
+            {
+              "id": 0,
+              "quantity": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "account": {
+    "company_name": "string",
+    "currency": "string",
+    "first_name": "string",
+    "last_name": "string",
+    "street": "string",
+    "additional_info": "string",
+    "zip_code": "string",
+    "city": "string",
+    "state": "string",
+    "country": "string",
+    "email": "string",
+    "phone": "string",
+    "vat_id": "string",
+    "has_billing_address": true,
+    "is_company": true,
+    "billing_first_name": "string",
+    "billing_last_name": "string",
+    "billing_street": "string",
+    "billing_additional_info": "string",
+    "billing_zip_code": "string",
+    "billing_city": "string",
+    "billing_country": "string",
+    "billing_email": "string",
+    "billing_phone": "string"
+  },
+  "currency": "string",
+  "voucher_rate_plans": [
+    {
+      "rate_plan_id": 0,
+      "campaign_id": 0
+    }
+  ]
+}
 ```
 
 <h3 id="calculate-prices-for-selected-rate-plans,-quantities,-and-discounts-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|array[object]|false|none|
+|body|body|[SubscribeOption](#schemasubscribeoption)|false|none|
 
 > Example responses
 
@@ -3681,20 +3759,53 @@ print r.json()
 ```json
 [
   {
-    "ratePlan": {
-      "id": 0,
-      "quantity": 0,
-      "price": 0,
-      "tax": 0,
-      "total": 0
-    },
-    "charges": [
+    "id": 0,
+    "quantity": 0,
+    "order_pos": 0,
+    "prices": [
+      {
+        "billing_period": "string",
+        "is_discounted": true,
+        "netto": 0,
+        "tax": 0,
+        "brutto": 0,
+        "original_netto": 0,
+        "original_tax": 0,
+        "original_brutto": 0
+      }
+    ],
+    "rate_plans": [
       {
         "id": 0,
         "quantity": 0,
-        "price": 0,
-        "tax": 0,
-        "total": 0
+        "prices": [
+          {
+            "billing_period": "string",
+            "is_discounted": true,
+            "netto": 0,
+            "tax": 0,
+            "brutto": 0,
+            "original_netto": 0,
+            "original_tax": 0,
+            "original_brutto": 0
+          }
+        ],
+        "charges": [
+          {
+            "id": 0,
+            "quantity": 0,
+            "billing_period": "string",
+            "prices": {
+              "is_discounted": true,
+              "netto": 0,
+              "tax": 0,
+              "brutto": 0,
+              "original_netto": 0,
+              "original_tax": 0,
+              "original_brutto": 0
+            }
+          }
+        ]
       }
     ]
   }
@@ -3715,18 +3826,42 @@ Status Code **200**
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |*anonymous*|[[SubscribeOptionWithPrice](#schemasubscribeoptionwithprice)]|false|none|none|
-|» ratePlan|object|false|none|none|
+|» id|integer|false|none|none|
+|» quantity|integer|false|none|none|
+|» order_pos|integer|false|none|none|
+|» prices|[object]|false|none|none|
+|»» billing_period|string|false|none|none|
+|»» is_discounted|boolean|false|none|none|
+|»» netto|number|false|none|none|
+|»» tax|number|false|none|none|
+|»» brutto|number|false|none|none|
+|»» original_netto|number|false|none|none|
+|»» original_tax|number|false|none|none|
+|»» original_brutto|number|false|none|none|
+|» rate_plans|[object]|false|none|none|
 |»» id|integer|false|none|none|
 |»» quantity|integer|false|none|none|
-|»» price|number|false|none|none|
-|»» tax|number|false|none|none|
-|»» total|number|false|none|none|
-|» charges|[object]|false|none|none|
-|»» id|integer|false|none|none|
-|»» quantity|integer|false|none|none|
-|»» price|number|false|none|none|
-|»» tax|number|false|none|none|
-|»» total|number|false|none|none|
+|»» prices|[object]|false|none|none|
+|»»» billing_period|string|false|none|none|
+|»»» is_discounted|boolean|false|none|none|
+|»»» netto|number|false|none|none|
+|»»» tax|number|false|none|none|
+|»»» brutto|number|false|none|none|
+|»»» original_netto|number|false|none|none|
+|»»» original_tax|number|false|none|none|
+|»»» original_brutto|number|false|none|none|
+|»» charges|[object]|false|none|none|
+|»»» id|integer|false|none|none|
+|»»» quantity|integer|false|none|none|
+|»»» billing_period|string|false|none|none|
+|»»» prices|object|false|none|none|
+|»»»» is_discounted|boolean|false|none|none|
+|»»»» netto|number|false|none|none|
+|»»»» tax|number|false|none|none|
+|»»»» brutto|number|false|none|none|
+|»»»» original_netto|number|false|none|none|
+|»»»» original_tax|number|false|none|none|
+|»»»» original_brutto|number|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -4052,8 +4187,8 @@ print r.json()
 
 ```json
 {
-  "pageId": "string",
-  "userId": 0
+  "page_id": "string",
+  "user_id": 0
 }
 ```
 
@@ -4063,8 +4198,8 @@ print r.json()
 |---|---|---|---|---|
 |code|path|string|true|The voucher code that should be applied|
 |body|body|object|true|none|
-|» pageId|body|string|false|none|
-|» userId|body|integer|false|none|
+|» page_id|body|string|false|none|
+|» user_id|body|integer|false|none|
 
 > Example responses
 
@@ -4072,7 +4207,8 @@ print r.json()
 
 ```json
 {
-  "discountRatePlanId": 0,
+  "discount_rate_plan_id": 0,
+  "campaign_id": 0,
   "success": true
 }
 ```
@@ -4090,7 +4226,8 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» discountRatePlanId|integer|false|none|none|
+|» discount_rate_plan_id|integer|false|none|none|
+|» campaign_id|integer|false|none|none|
 |» success|boolean|false|none|none|
 
 <aside class="success">
@@ -4176,8 +4313,8 @@ print r.json()
 
 ```json
 {
-  "pageId": "string",
-  "userId": 0
+  "page_id": "string",
+  "user_id": 0
 }
 ```
 
@@ -4187,8 +4324,8 @@ print r.json()
 |---|---|---|---|---|
 |code|path|string|true|The voucher code that should be applied|
 |body|body|object|true|none|
-|» pageId|body|string|false|none|
-|» userId|body|integer|false|none|
+|» page_id|body|string|false|none|
+|» user_id|body|integer|false|none|
 
 > Example responses
 
@@ -4196,7 +4333,8 @@ print r.json()
 
 ```json
 {
-  "discountRatePlanId": 0,
+  "discount_rate_plan_id": 0,
+  "campaign_id": 0,
   "success": true
 }
 ```
@@ -4214,349 +4352,9 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» discountRatePlanId|integer|false|none|none|
+|» discount_rate_plan_id|integer|false|none|none|
+|» campaign_id|integer|false|none|none|
 |» success|boolean|false|none|none|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-<h1 id="subscription-suite-api-suite-product">suite-product</h1>
-
-## Get a suite product by id
-
-<a id="opIdgetSuiteProductById"></a>
-
-> Code samples
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/suite-product/{id}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-```http
-GET /suite-product/{id} HTTP/1.1
-
-Accept: application/json
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json'
-}
-
-result = RestClient.get '/suite-product/{id}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json'
-}
-
-r = requests.get('/suite-product/{id}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-`GET /suite-product/{id}`
-
-<h3 id="get-a-suite-product-by-id-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer|true|The ID of a Suite Product|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "id": 0,
-  "name": "string",
-  "description": "string",
-  "feature_list": "string",
-  "effective_start_date": "string",
-  "effective_end_date": "string",
-  "different_quantities_allowed": 0,
-  "different_quantities_allowed_for_charge": 0,
-  "purchasable_by_customer": 0,
-  "purchasable_by_partner": 0,
-  "purchasable_by_sales": 0,
-  "multiple_subscriptions_allowed": 0,
-  "tenant_id": 0,
-  "subscription_type": "string",
-  "renewal_type": "string",
-  "term": 0,
-  "renewal_term": 0,
-  "is_auto_renew": 0,
-  "cancel_behaviour": 0,
-  "quantity_upgrade_behaviour": 0,
-  "quantity_downgrade_behaviour": 0,
-  "upgrade_behaviour": 0,
-  "downgrade_behaviour": 0,
-  "new_subscribe_mode": 0,
-  "add_on_mode": 0,
-  "has_contact_us_link": 0,
-  "trusted_html": "string",
-  "quantity_level": 0,
-  "price_level": 0,
-  "cancel_period": 0,
-  "generated_id": "string",
-  "cancel_mode": 0,
-  "quantity_upgrade_mode": 0,
-  "quantity_downgrade_mode": 0,
-  "upgrade_mode": 0,
-  "downgrade_mode": 0,
-  "categories": [],
-  "add_ons": [],
-  "change_options": [],
-  "subscription": {
-    "id": "string",
-    "account_id": "string",
-    "account_number": "string",
-    "account_name": "string",
-    "invoice_owner_account_id": "string",
-    "invoice_owner_account_number": "string",
-    "invoice_owner_account_name": "string",
-    "subscription_number": "string",
-    "term_type": "string",
-    "invoice_separately": true,
-    "contract_effective_date": "string",
-    "service_activation_date": "string",
-    "customer_acceptance_date": "string",
-    "subscription_start_date": "string",
-    "term_start_date": "string",
-    "term_end_date": "string",
-    "initial_term": 0,
-    "initial_term_period_type": "string",
-    "current_term": 0,
-    "current_term_period_type": "string",
-    "auto_renew": true,
-    "renewal_setting": "string",
-    "renewal_term": 0,
-    "renewal_term_period_type": "string",
-    "contracted_mrr": 0,
-    "total_contracted_value": 0,
-    "status": "string",
-    "rate_plans": [
-      {
-        "id": "string",
-        "product_id": "string",
-        "product_name": "string",
-        "product_sku": "string",
-        "product_rate_plan_id": "string",
-        "rate_plan_name": "string",
-        "suite_product_id": "string",
-        "suite_product_uuid": "string",
-        "rate_plan_charges": [
-          {
-            "id": "string",
-            "original_charge_id": "string",
-            "product_rate_plan_charge_id": "string",
-            "number": "string",
-            "name": "string",
-            "type": "string",
-            "model": "string",
-            "version": 0,
-            "pricing_summary": "string",
-            "price_change_option": "string",
-            "price_increase_percentage": 0,
-            "currency": "string",
-            "price": 0,
-            "discount_apply_details": [],
-            "billing_day": "string",
-            "list_price_base": "string",
-            "billing_period": "string",
-            "billing_timing": "string",
-            "billing_period_alignment": "string",
-            "quantity": 0,
-            "segment": 0,
-            "effective_start_date": "string",
-            "effective_end_date": "string",
-            "processed_through_date": "string",
-            "charged_through_date": "string",
-            "done": true,
-            "trigger_event": "string",
-            "end_date_condition": "string",
-            "mrr": 0,
-            "dmrc": 0,
-            "tcv": 0,
-            "dtcv": 0,
-            "description": "string"
-          }
-        ],
-        "subscription_product_features": [
-          {
-            "id": "string",
-            "name": "string",
-            "feature_code": "string",
-            "description": "string"
-          }
-        ]
-      }
-    ],
-    "latest_rate_plans": [
-      {
-        "id": "string",
-        "product_id": "string",
-        "product_name": "string",
-        "product_sku": "string",
-        "product_rate_plan_id": "string",
-        "rate_plan_name": "string",
-        "suite_product_id": "string",
-        "suite_product_uuid": "string",
-        "rate_plan_charges": [
-          {
-            "id": "string",
-            "original_charge_id": "string",
-            "product_rate_plan_charge_id": "string",
-            "number": "string",
-            "name": "string",
-            "type": "string",
-            "model": "string",
-            "version": 0,
-            "pricing_summary": "string",
-            "price_change_option": "string",
-            "price_increase_percentage": 0,
-            "currency": "string",
-            "price": 0,
-            "discount_apply_details": [],
-            "billing_day": "string",
-            "list_price_base": "string",
-            "billing_period": "string",
-            "billing_timing": "string",
-            "billing_period_alignment": "string",
-            "quantity": 0,
-            "segment": 0,
-            "effective_start_date": "string",
-            "effective_end_date": "string",
-            "processed_through_date": "string",
-            "charged_through_date": "string",
-            "done": true,
-            "trigger_event": "string",
-            "end_date_condition": "string",
-            "mrr": 0,
-            "dmrc": 0,
-            "tcv": 0,
-            "dtcv": 0,
-            "description": "string"
-          }
-        ],
-        "subscription_product_features": [
-          {
-            "id": "string",
-            "name": "string",
-            "feature_code": "string",
-            "description": "string"
-          }
-        ]
-      }
-    ],
-    "current_end_date": "2019-04-18"
-  },
-  "quantity": 0,
-  "rate_plans": [
-    {
-      "id": "string",
-      "product_id": "string",
-      "product_name": "string",
-      "product_sku": "string",
-      "product_rate_plan_id": "string",
-      "rate_plan_name": "string",
-      "suite_product_id": "string",
-      "suite_product_uuid": "string",
-      "rate_plan_charges": [
-        {
-          "id": "string",
-          "original_charge_id": "string",
-          "product_rate_plan_charge_id": "string",
-          "number": "string",
-          "name": "string",
-          "type": "string",
-          "model": "string",
-          "version": 0,
-          "pricing_summary": "string",
-          "price_change_option": "string",
-          "price_increase_percentage": 0,
-          "currency": "string",
-          "price": 0,
-          "discount_apply_details": [],
-          "billing_day": "string",
-          "list_price_base": "string",
-          "billing_period": "string",
-          "billing_timing": "string",
-          "billing_period_alignment": "string",
-          "quantity": 0,
-          "segment": 0,
-          "effective_start_date": "string",
-          "effective_end_date": "string",
-          "processed_through_date": "string",
-          "charged_through_date": "string",
-          "done": true,
-          "trigger_event": "string",
-          "end_date_condition": "string",
-          "mrr": 0,
-          "dmrc": 0,
-          "tcv": 0,
-          "dtcv": 0,
-          "description": "string"
-        }
-      ],
-      "subscription_product_features": [
-        {
-          "id": "string",
-          "name": "string",
-          "feature_code": "string",
-          "description": "string"
-        }
-      ]
-    }
-  ],
-  "uuid": "string"
-}
-```
-
-<h3 id="get-a-suite-product-by-id-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[SuiteProduct](#schemasuiteproduct)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
 
 <aside class="success">
 This operation does not require authentication
@@ -4702,6 +4500,117 @@ print r.json()
 This operation does not require authentication
 </aside>
 
+<h1 id="subscription-suite-api-string">string</h1>
+
+## Change Quantity Operation
+
+<a id="opIdProductChangeQuantity"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("PUT", "/product/{uuid}/quantity/{quantity}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+PUT /product/{uuid}/quantity/{quantity} HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.put '/product/{uuid}/quantity/{quantity}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.put('/product/{uuid}/quantity/{quantity}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`PUT /product/{uuid}/quantity/{quantity}`
+
+<h3 id="change-quantity-operation-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|uuid|path|string|true|The UUID of a subscribed Subscription Suite product|
+|quantity|path|integer|true|Product Quantity|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "zuora_id": "string",
+  "name": "string",
+  "description": "string",
+  "feature_list": "string",
+  "highlight": "string",
+  "effective_start_date": "string",
+  "effective_end_date": "string",
+  "sku": "string",
+  "updated_date": "string",
+  "tenant_id": 0
+}
+```
+
+<h3 id="change-quantity-operation-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Product](#schemaproduct)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
 # Schemas
 
 <h2 id="tocSaccountpaymentmethod">AccountPaymentMethod</h2>
@@ -4712,7 +4621,12 @@ This operation does not require authentication
 {
   "id": "string",
   "type": "string",
-  "data": {}
+  "credit_card_number": "string",
+  "credit_card_holder": "string",
+  "credit_card_expiration_month": 0,
+  "credit_card_expiration_year": 0,
+  "iban": "string",
+  "bank_account_holder": "string"
 }
 
 ```
@@ -4723,7 +4637,12 @@ This operation does not require authentication
 |---|---|---|---|---|
 |id|string|false|none|none|
 |type|string|false|none|none|
-|data|object|false|none|none|
+|credit_card_number|string|false|none|none|
+|credit_card_holder|string|false|none|none|
+|credit_card_expiration_month|number|false|none|none|
+|credit_card_expiration_year|number|false|none|none|
+|iban|string|false|none|none|
+|bank_account_holder|string|false|none|none|
 
 <h2 id="tocSaccount">Account</h2>
 
@@ -4795,8 +4714,8 @@ This operation does not require authentication
 ```json
 {
   "payment_amount": 0,
-  "invoice_date": "2019-04-18",
-  "due_date": "2019-04-18",
+  "invoice_date": "2019-04-21",
+  "due_date": "2019-04-21",
   "tax_amount": 0,
   "amount": 0,
   "balance": 0,
@@ -5008,7 +4927,7 @@ This operation does not require authentication
         ]
       }
     ],
-    "current_end_date": "2019-04-18"
+    "current_end_date": "2019-04-21"
   },
   "quantity": 0,
   "rate_plans": [
@@ -5268,7 +5187,7 @@ This operation does not require authentication
       ]
     }
   ],
-  "current_end_date": "2019-04-18"
+  "current_end_date": "2019-04-21"
 }
 
 ```
@@ -5638,7 +5557,7 @@ This operation does not require authentication
         ]
       }
     ],
-    "current_end_date": "2019-04-18"
+    "current_end_date": "2019-04-21"
   },
   "id": "string",
   "product_id": "string",
@@ -5936,13 +5855,13 @@ This operation does not require authentication
   "country": "string",
   "county": "string",
   "fax": "string",
-  "firstName": "string",
-  "lastName": "string",
+  "first_name": "string",
+  "last_name": "string",
   "state": "string",
-  "taxRegion": "string",
-  "workEmail": "string",
-  "workPhone": "string",
-  "zipCode": "string"
+  "tax_region": "string",
+  "work_email": "string",
+  "work_phone": "string",
+  "zip_code": "string"
 }
 
 ```
@@ -5957,13 +5876,13 @@ This operation does not require authentication
 |country|string|false|none|none|
 |county|string|false|none|none|
 |fax|string|false|none|none|
-|firstName|string|false|none|none|
-|lastName|string|false|none|none|
+|first_name|string|false|none|none|
+|last_name|string|false|none|none|
 |state|string|false|none|none|
-|taxRegion|string|false|none|none|
-|workEmail|string|false|none|none|
-|workPhone|string|false|none|none|
-|zipCode|string|false|none|none|
+|tax_region|string|false|none|none|
+|work_email|string|false|none|none|
+|work_phone|string|false|none|none|
+|zip_code|string|false|none|none|
 
 <h2 id="tocSpaymentmethod">PaymentMethod</h2>
 
@@ -5971,14 +5890,11 @@ This operation does not require authentication
 
 ```json
 {
-  "id": "string",
   "type": "string",
-  "creditCardNumber": "string",
-  "creditCardHolder": "string",
-  "creditCardExpirationMonth": 0,
-  "creditCardExpirationYear": 0,
-  "iban": "string",
-  "bankAccountHolder": "string"
+  "data": {
+    "id": "string",
+    "token": "string"
+  }
 }
 
 ```
@@ -5987,14 +5903,10 @@ This operation does not require authentication
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string|false|none|none|
 |type|string|false|none|none|
-|creditCardNumber|string|false|none|none|
-|creditCardHolder|string|false|none|none|
-|creditCardExpirationMonth|number|false|none|none|
-|creditCardExpirationYear|number|false|none|none|
-|iban|string|false|none|none|
-|bankAccountHolder|string|false|none|none|
+|data|object|false|none|none|
+|» id|string|false|none|none|
+|» token|string|false|none|none|
 
 <h2 id="tocSproduct">Product</h2>
 
@@ -6058,14 +5970,56 @@ This operation does not require authentication
 
 ```json
 {
-  "ratePlan": {
-    "id": 0,
-    "quantity": 0
-  },
-  "charges": [
+  "suite_products": [
     {
       "id": 0,
-      "quantity": 0
+      "quantity": 0,
+      "order_pos": 0,
+      "rate_plans": [
+        {
+          "id": 0,
+          "quantity": 0,
+          "charges": [
+            {
+              "id": 0,
+              "quantity": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "account": {
+    "company_name": "string",
+    "currency": "string",
+    "first_name": "string",
+    "last_name": "string",
+    "street": "string",
+    "additional_info": "string",
+    "zip_code": "string",
+    "city": "string",
+    "state": "string",
+    "country": "string",
+    "email": "string",
+    "phone": "string",
+    "vat_id": "string",
+    "has_billing_address": true,
+    "is_company": true,
+    "billing_first_name": "string",
+    "billing_last_name": "string",
+    "billing_street": "string",
+    "billing_additional_info": "string",
+    "billing_zip_code": "string",
+    "billing_city": "string",
+    "billing_country": "string",
+    "billing_email": "string",
+    "billing_phone": "string"
+  },
+  "currency": "string",
+  "voucher_rate_plans": [
+    {
+      "rate_plan_id": 0,
+      "campaign_id": 0
     }
   ]
 }
@@ -6076,12 +6030,21 @@ This operation does not require authentication
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|ratePlan|object|false|none|none|
+|suite_products|[object]|false|none|none|
 |» id|integer|false|none|none|
 |» quantity|integer|false|none|none|
-|charges|[object]|false|none|none|
-|» id|integer|false|none|none|
-|» quantity|integer|false|none|none|
+|» order_pos|integer|false|none|none|
+|» rate_plans|[object]|false|none|none|
+|»» id|integer|false|none|none|
+|»» quantity|integer|false|none|none|
+|»» charges|[object]|false|none|none|
+|»»» id|integer|false|none|none|
+|»»» quantity|integer|false|none|none|
+|»» account|[Account](#schemaaccount)|false|none|none|
+|»» currency|string|false|none|none|
+|»» voucher_rate_plans|[object]|false|none|none|
+|»»» rate_plan_id|integer|false|none|none|
+|»»» campaign_id|integer|false|none|none|
 
 <h2 id="tocSsubscribeoptionwithprice">SubscribeOptionWithPrice</h2>
 
@@ -6089,20 +6052,53 @@ This operation does not require authentication
 
 ```json
 {
-  "ratePlan": {
-    "id": 0,
-    "quantity": 0,
-    "price": 0,
-    "tax": 0,
-    "total": 0
-  },
-  "charges": [
+  "id": 0,
+  "quantity": 0,
+  "order_pos": 0,
+  "prices": [
+    {
+      "billing_period": "string",
+      "is_discounted": true,
+      "netto": 0,
+      "tax": 0,
+      "brutto": 0,
+      "original_netto": 0,
+      "original_tax": 0,
+      "original_brutto": 0
+    }
+  ],
+  "rate_plans": [
     {
       "id": 0,
       "quantity": 0,
-      "price": 0,
-      "tax": 0,
-      "total": 0
+      "prices": [
+        {
+          "billing_period": "string",
+          "is_discounted": true,
+          "netto": 0,
+          "tax": 0,
+          "brutto": 0,
+          "original_netto": 0,
+          "original_tax": 0,
+          "original_brutto": 0
+        }
+      ],
+      "charges": [
+        {
+          "id": 0,
+          "quantity": 0,
+          "billing_period": "string",
+          "prices": {
+            "is_discounted": true,
+            "netto": 0,
+            "tax": 0,
+            "brutto": 0,
+            "original_netto": 0,
+            "original_tax": 0,
+            "original_brutto": 0
+          }
+        }
+      ]
     }
   ]
 }
@@ -6113,16 +6109,40 @@ This operation does not require authentication
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|ratePlan|object|false|none|none|
+|id|integer|false|none|none|
+|quantity|integer|false|none|none|
+|order_pos|integer|false|none|none|
+|prices|[object]|false|none|none|
+|» billing_period|string|false|none|none|
+|» is_discounted|boolean|false|none|none|
+|» netto|number|false|none|none|
+|» tax|number|false|none|none|
+|» brutto|number|false|none|none|
+|» original_netto|number|false|none|none|
+|» original_tax|number|false|none|none|
+|» original_brutto|number|false|none|none|
+|rate_plans|[object]|false|none|none|
 |» id|integer|false|none|none|
 |» quantity|integer|false|none|none|
-|» price|number|false|none|none|
-|» tax|number|false|none|none|
-|» total|number|false|none|none|
-|charges|[object]|false|none|none|
-|» id|integer|false|none|none|
-|» quantity|integer|false|none|none|
-|» price|number|false|none|none|
-|» tax|number|false|none|none|
-|» total|number|false|none|none|
+|» prices|[object]|false|none|none|
+|»» billing_period|string|false|none|none|
+|»» is_discounted|boolean|false|none|none|
+|»» netto|number|false|none|none|
+|»» tax|number|false|none|none|
+|»» brutto|number|false|none|none|
+|»» original_netto|number|false|none|none|
+|»» original_tax|number|false|none|none|
+|»» original_brutto|number|false|none|none|
+|» charges|[object]|false|none|none|
+|»» id|integer|false|none|none|
+|»» quantity|integer|false|none|none|
+|»» billing_period|string|false|none|none|
+|»» prices|object|false|none|none|
+|»»» is_discounted|boolean|false|none|none|
+|»»» netto|number|false|none|none|
+|»»» tax|number|false|none|none|
+|»»» brutto|number|false|none|none|
+|»»» original_netto|number|false|none|none|
+|»»» original_tax|number|false|none|none|
+|»»» original_brutto|number|false|none|none|
 

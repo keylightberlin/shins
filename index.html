@@ -14,7 +14,7 @@
     <link rel="stylesheet" media="screen" href="pub/css/screen.css">
     <link rel="stylesheet" media="print" href="pub/css/print.css">
     <link rel="stylesheet" media="screen" href="pub/css/darkula.css">
-
+    
       <script src="source/javascripts/lib/_jquery.js"></script>
 <script src="source/javascripts/lib/_energize.js"></script>
 <script src="source/javascripts/app/_lang.js"></script>
@@ -34,7 +34,7 @@ window.onpopstate = function() {
 };
 </script>
 
-
+    
     <meta name="theme-color" content="#F3F7F9" />
 
   </head>
@@ -47,410 +47,408 @@ window.onpopstate = function() {
       </span>
     </a>
     <div class="toc-wrapper">
-        <!-- <img src="source/images/logo.png" class="logo" alt="Logo"> -->
-        <div style="background-color: #fdfdfd">
-            <img src="pub/logo.png" class="logo" alt="Logo">
-        </div>
+      <img src="source/images/logo.png" class="logo" alt="Logo">
+      
         <div class="lang-selector">
-
-
+          
+            
               <a href="#" data-language-name="go">Go</a>
-
-
-
+            
+          
+            
               <a href="#" data-language-name="http">HTTP</a>
-
-
-
+            
+          
+            
               <a href="#" data-language-name="ruby">Ruby</a>
-
-
-
+            
+          
+            
               <a href="#" data-language-name="python">Python</a>
-
-
+            
+          
         </div>
-
-
+      
+      
       <div id="toc" class="toc-list-h1">
 	  	<ul class="toc-list-h1">
-
+        
           <li>
             <a href="#subscription-suite-api" class="toc-h1 toc-link" data-title="Subscription Suite API v1.0.0">Subscription Suite API v1.0.0</a>
-
+            
           </li>
-
+        
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-account" class="toc-h1 toc-link" data-title="account">account</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-summarized-information-about-an-account--in-particular-name-and-the-address-information" class="toc-h2 toc-link" data-title="Get summarized information about an account, in particular name and the address information">Get summarized information about an account, in particular name and the address information</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#update-an-existing-account" class="toc-h2 toc-link" data-title="Update an existing account">Update an existing account</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-the-accounts-payment-method" class="toc-h2 toc-link" data-title="Get the accounts payment method">Get the accounts payment method</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#update-the-accounts-payment-method" class="toc-h2 toc-link" data-title="Update the Accounts payment method">Update the Accounts payment method</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-posted-invoices-for-a-user" class="toc-h2 toc-link" data-title="Get posted invoices for a user">Get posted invoices for a user</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-invoice-for-account-by-invoiceid" class="toc-h2 toc-link" data-title="Get Invoice for Account by InvoiceId">Get Invoice for Account by InvoiceId</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-subscriptions-for-a-user" class="toc-h2 toc-link" data-title="Get subscriptions for a user">Get subscriptions for a user</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#validate-a-vat-id" class="toc-h2 toc-link" data-title="Validate a VAT ID">Validate a VAT ID</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-rate-plans" class="toc-h2 toc-link" data-title="Get Rate Plans">Get Rate Plans</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-payment-method" class="toc-h1 toc-link" data-title="payment-method">payment-method</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-a-payment-method-by-zuora-id" class="toc-h2 toc-link" data-title="Get a payment method by Zuora Id">Get a payment method by Zuora Id</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-the-signature-to-render-a-zuora-payment-page-in-an-iframe" class="toc-h2 toc-link" data-title="Get the signature to render a Zuora payment page in an iFrame">Get the signature to render a Zuora payment page in an iFrame</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-the-available-payment-methods-for-a-certain-user-type" class="toc-h2 toc-link" data-title="Get the available payment methods for a certain user type">Get the available payment methods for a certain user type</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-quote" class="toc-h1 toc-link" data-title="quote">quote</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-quote-data-from-salesforce" class="toc-h2 toc-link" data-title="Get quote data from Salesforce">Get quote data from Salesforce</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#confirm-a-quote-in-salesforce-and-send-it-to-zuora" class="toc-h2 toc-link" data-title="Confirm a quote in Salesforce and send it to Zuora">Confirm a quote in Salesforce and send it to Zuora</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-product-catalog" class="toc-h1 toc-link" data-title="product-catalog">product-catalog</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-all-zuora-products" class="toc-h2 toc-link" data-title="Get all Zuora products">Get all Zuora products</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-a-zuora-product" class="toc-h2 toc-link" data-title="Get a Zuora product">Get a Zuora product</a>
-
+                    
                   </li>
-
+                
                   <li>
-                    <a href="#preview-of-cancel-operation" class="toc-h2 toc-link" data-title="Preview of Cancel Operation">Preview of Cancel Operation</a>
-
+                    <a href="#delete-a-zuora-product" class="toc-h2 toc-link" data-title="Delete a Zuora product">Delete a Zuora product</a>
+                    
                   </li>
-
-                  <li>
-                    <a href="#preview-of-replace-operation" class="toc-h2 toc-link" data-title="Preview of Replace Operation">Preview of Replace Operation</a>
-
-                  </li>
-
-                  <li>
-                    <a href="#replace-operation" class="toc-h2 toc-link" data-title="Replace Operation">Replace Operation</a>
-
-                  </li>
-
-                  <li>
-                    <a href="#initilization-of-change-quantity-operation" class="toc-h2 toc-link" data-title="Initilization of Change Quantity Operation">Initilization of Change Quantity Operation</a>
-
-                  </li>
-
-                  <li>
-                    <a href="#preview-of-change-quantity-operation" class="toc-h2 toc-link" data-title="Preview of Change Quantity Operation">Preview of Change Quantity Operation</a>
-
-                  </li>
-
-                  <li>
-                    <a href="#change-quantity-operation" class="toc-h2 toc-link" data-title="Change Quantity Operation">Change Quantity Operation</a>
-
-                  </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-shop" class="toc-h1 toc-link" data-title="shop">shop</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#fetches-all-relevant-information-to-display-a-shop-page" class="toc-h2 toc-link" data-title="Fetches all relevant information to display a shop page">Fetches all relevant information to display a shop page</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-subscription" class="toc-h1 toc-link" data-title="subscription">subscription</a>
-
+            
               <ul class="toc-list-h2">
-
+                
+                  <li>
+                    <a href="#preview-of-cancel-operation" class="toc-h2 toc-link" data-title="Preview of Cancel Operation">Preview of Cancel Operation</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#preview-of-replace-operation" class="toc-h2 toc-link" data-title="Preview of Replace Operation">Preview of Replace Operation</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#replace-operation" class="toc-h2 toc-link" data-title="Replace Operation">Replace Operation</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#initilization-of-change-quantity-operation" class="toc-h2 toc-link" data-title="Initilization of Change Quantity Operation">Initilization of Change Quantity Operation</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#preview-of-change-quantity-operation" class="toc-h2 toc-link" data-title="Preview of Change Quantity Operation">Preview of Change Quantity Operation</a>
+                    
+                  </li>
+                
                   <li>
                     <a href="#create-new-subscriptions-for-a-user" class="toc-h2 toc-link" data-title="Create new subscriptions for a user">Create new subscriptions for a user</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#calculate-prices-for-selected-rate-plans--quantities--and-discounts" class="toc-h2 toc-link" data-title="Calculate prices for selected rate plans, quantities, and discounts">Calculate prices for selected rate plans, quantities, and discounts</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-translation" class="toc-h1 toc-link" data-title="translation">translation</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-static-translations-for-a-certain-language" class="toc-h2 toc-link" data-title="Get static translations for a certain language">Get static translations for a certain language</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-dynamic-translations-for-the-keys-specified-in-the-request-body" class="toc-h2 toc-link" data-title="Get dynamic translations for the keys specified in the request body">Get dynamic translations for the keys specified in the request body</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-voucher" class="toc-h1 toc-link" data-title="voucher">voucher</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#initialize-a-voucher-code-and-block-it-for-a-certain-user-in-case-of-a-single-use-code" class="toc-h2 toc-link" data-title="Initialize a voucher code and block it for a certain user in case of a single use code">Initialize a voucher code and block it for a certain user in case of a single use code</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#confirm-and-consume-a-voucher-code" class="toc-h2 toc-link" data-title="Confirm and consume a voucher code">Confirm and consume a voucher code</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
-          <li>
-            <a href="#subscription-suite-api-suite-product" class="toc-h1 toc-link" data-title="suite-product">suite-product</a>
-
-              <ul class="toc-list-h2">
-
-                  <li>
-                    <a href="#get-a-suite-product-by-id" class="toc-h2 toc-link" data-title="Get a suite product by id">Get a suite product by id</a>
-
-                  </li>
-
-              </ul>
-
-          </li>
-
+        
           <li>
             <a href="#subscription-suite-api-config" class="toc-h1 toc-link" data-title="config">config</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-configuration-for-suite" class="toc-h2 toc-link" data-title="Get Configuration for suite">Get Configuration for suite</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
+          <li>
+            <a href="#subscription-suite-api-string" class="toc-h1 toc-link" data-title="string">string</a>
+            
+              <ul class="toc-list-h2">
+                
+                  <li>
+                    <a href="#change-quantity-operation" class="toc-h2 toc-link" data-title="Change Quantity Operation">Change Quantity Operation</a>
+                    
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
           <li>
             <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#tocsaccountpaymentmethod" class="toc-h2 toc-link" data-title="AccountPaymentMethod">AccountPaymentMethod</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsaccount" class="toc-h2 toc-link" data-title="Account">Account</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsinvoice" class="toc-h2 toc-link" data-title="Invoice">Invoice</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssuiteproduct" class="toc-h2 toc-link" data-title="SuiteProduct">SuiteProduct</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscription" class="toc-h2 toc-link" data-title="Subscription">Subscription</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsaccountrateplan" class="toc-h2 toc-link" data-title="AccountRatePlan">AccountRatePlan</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsrateplancharge" class="toc-h2 toc-link" data-title="RatePlanCharge">RatePlanCharge</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscriptionproductfeature" class="toc-h2 toc-link" data-title="SubscriptionProductFeature">SubscriptionProductFeature</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscriptionandrateplan" class="toc-h2 toc-link" data-title="SubscriptionAndRatePlan">SubscriptionAndRatePlan</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsconfig" class="toc-h2 toc-link" data-title="Config">Config</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocslanguage" class="toc-h2 toc-link" data-title="Language">Language</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscurrency" class="toc-h2 toc-link" data-title="Currency">Currency</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscartsettings" class="toc-h2 toc-link" data-title="CartSettings">CartSettings</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscheckoutsettings" class="toc-h2 toc-link" data-title="CheckoutSettings">CheckoutSettings</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscustomercentersettings" class="toc-h2 toc-link" data-title="CustomerCenterSettings">CustomerCenterSettings</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscontact" class="toc-h2 toc-link" data-title="Contact">Contact</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocspaymentmethod" class="toc-h2 toc-link" data-title="PaymentMethod">PaymentMethod</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsproduct" class="toc-h2 toc-link" data-title="Product">Product</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsrateplan" class="toc-h2 toc-link" data-title="RatePlan">RatePlan</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscribeoption" class="toc-h2 toc-link" data-title="SubscribeOption">SubscribeOption</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscribeoptionwithprice" class="toc-h2 toc-link" data-title="SubscribeOptionWithPrice">SubscribeOptionWithPrice</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
 		</ul>
       </div>
-
+      
         <ul class="toc-footer">
-
+          
         </ul>
-
+      
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
@@ -491,7 +489,7 @@ window.onpopstate = function() {
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -618,7 +616,7 @@ jwtAuth, cookieAuth
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -803,7 +801,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -859,7 +857,12 @@ r = requests.get(<span class="hljs-string">'/account/payment-method'</span>, par
 <pre class="highlight tab tab-json"><code>{
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"data"</span>: {}
+  <span class="hljs-attr">"credit_card_number"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"credit_card_holder"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"credit_card_expiration_month"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"credit_card_expiration_year"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"iban"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"bank_account_holder"</span>: <span class="hljs-string">"string"</span>
 }
 </code></pre>
 <h3 id="get-the-accounts-payment-method-responses">Responses</h3>
@@ -903,7 +906,7 @@ jwtAuth, cookieAuth
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -957,14 +960,11 @@ r = requests.put(<span class="hljs-string">'/account/payment-method'</span>, par
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardNumber"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardHolder"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardExpirationMonth"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"creditCardExpirationYear"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"iban"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"bankAccountHolder"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"token"</span>: <span class="hljs-string">"string"</span>
+  }
 }
 </code></pre>
 <h3 id="update-the-accounts-payment-method-parameters">Parameters</h3>
@@ -1072,7 +1072,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -1128,8 +1128,8 @@ r = requests.get(<span class="hljs-string">'/account/invoice'</span>, params={
 <pre class="highlight tab tab-json"><code>[
   {
     <span class="hljs-attr">"payment_amount"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-04-18"</span>,
-    <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-04-18"</span>,
+    <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
+    <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
     <span class="hljs-attr">"tax_amount"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">0</span>,
@@ -1269,7 +1269,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/pdf"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -1389,7 +1389,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -1625,7 +1625,7 @@ r = requests.get(<span class="hljs-string">'/account/subscription'</span>, param
           ]
         }
       ],
-      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-18"</span>
+      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
     },
     <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"rate_plans"</span>: [
@@ -2596,7 +2596,7 @@ jwtAuth, cookieAuth
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -2733,7 +2733,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -2930,7 +2930,7 @@ r = requests.get(<span class="hljs-string">'/account/rate-plan'</span>, params={
           ]
         }
       ],
-      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-18"</span>
+      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
     },
     <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"string"</span>,
@@ -3673,7 +3673,7 @@ jwtAuth, cookieAuth
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -3746,14 +3746,11 @@ r = requests.get(<span class="hljs-string">'/payment-method/{id}'</span>, params
 <p>200 Response</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardNumber"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardHolder"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardExpirationMonth"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"creditCardExpirationYear"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"iban"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"bankAccountHolder"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"token"</span>: <span class="hljs-string">"string"</span>
+  }
 }
 </code></pre>
 <h3 id="get-a-payment-method-by-zuora-id-responses">Responses</h3>
@@ -3800,7 +3797,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -3981,7 +3978,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -4129,7 +4126,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -4202,49 +4199,49 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 <p>200 Response</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"billToContact"</span>: {
+  <span class="hljs-attr">"bill_to_contact"</span>: {
     <span class="hljs-attr">"address1"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"address2"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"county"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"fax"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"firstName"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"lastName"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"taxRegion"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"workEmail"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"workPhone"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"zipCode"</span>: <span class="hljs-string">"string"</span>
+    <span class="hljs-attr">"tax_region"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"work_email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"work_phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>
   },
   <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"quoteNumber"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"ratePlans"</span>: [
+  <span class="hljs-attr">"quote_number"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"rate_plans"</span>: [
     {
       <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>
     }
   ],
-  <span class="hljs-attr">"soldToContact"</span>: {
+  <span class="hljs-attr">"sold_to_contact"</span>: {
     <span class="hljs-attr">"address1"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"address2"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"county"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"fax"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"firstName"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"lastName"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"taxRegion"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"workEmail"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"workPhone"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"zipCode"</span>: <span class="hljs-string">"string"</span>
+    <span class="hljs-attr">"tax_region"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"work_email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"work_phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>
   },
-  <span class="hljs-attr">"startDate"</span>: <span class="hljs-string">"2019-04-18"</span>,
+  <span class="hljs-attr">"start_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
   <span class="hljs-attr">"term"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"validUntiDate"</span>: <span class="hljs-string">"2019-04-18"</span>,
-  <span class="hljs-attr">"vatId"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"valid_until_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
+  <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>
 }
 </code></pre>
 <h3 id="get-quote-data-from-salesforce-responses">Responses</h3>
@@ -4286,7 +4283,7 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 </thead>
 <tbody>
 <tr>
-<td>» billToContact</td>
+<td>» bill_to_contact</td>
 <td>object</td>
 <td>false</td>
 <td>none</td>
@@ -4335,14 +4332,14 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 <td>none</td>
 </tr>
 <tr>
-<td>»» firstName</td>
+<td>»» first_name</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» lastName</td>
+<td>»» last_name</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
@@ -4356,28 +4353,28 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 <td>none</td>
 </tr>
 <tr>
-<td>»» taxRegion</td>
+<td>»» tax_region</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» workEmail</td>
+<td>»» work_email</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» workPhone</td>
+<td>»» work_phone</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» zipCode</td>
+<td>»» zip_code</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
@@ -4398,14 +4395,14 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 <td>none</td>
 </tr>
 <tr>
-<td>» quoteNumber</td>
+<td>» quote_number</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» ratePlans</td>
+<td>» rate_plans</td>
 <td>[<a href="#schemarateplan">RatePlan</a>]</td>
 <td>false</td>
 <td>none</td>
@@ -4426,14 +4423,14 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 <td>none</td>
 </tr>
 <tr>
-<td>» soldToContact</td>
+<td>» sold_to_contact</td>
 <td>object</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» startDate</td>
+<td>» start_date</td>
 <td>string(date)</td>
 <td>false</td>
 <td>none</td>
@@ -4447,14 +4444,14 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 <td>none</td>
 </tr>
 <tr>
-<td>» validUntiDate</td>
+<td>» valid_until_date</td>
 <td>string(date)</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» vatId</td>
+<td>» vat_id</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
@@ -4481,7 +4478,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -4608,7 +4605,7 @@ r = requests.post(<span class="hljs-string">'/quote/{id}'</span>, params={
 This operation does not require authentication
 </aside>
 <h1 id="subscription-suite-api-product-catalog">product-catalog</h1>
-<p>Fetching and managing the Zuora product catalog</p>
+<p>Fetching the Zuora product catalog</p>
 <h2 id="get-all-zuora-products">Get all Zuora products</h2>
 <p><a id="opIdgetProducts"></a></p>
 <blockquote>
@@ -4625,7 +4622,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -4814,7 +4811,7 @@ r = requests.get(<span class="hljs-string">'/product'</span>, params={
 This operation does not require authentication
 </aside>
 <h2 id="get-a-zuora-product">Get a Zuora product</h2>
-<p><a id="opIddeleteProductById"></a></p>
+<p><a id="opIdgetProductById"></a></p>
 <blockquote>
 <p>Code samples</p>
 </blockquote>
@@ -4829,11 +4826,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"DELETE"</span>, <span class="hljs-string">"/product/{id}"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{id}"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -4842,7 +4839,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">DELETE</span> <span class="hljs-string">/product/{id}</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{id}</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -4854,7 +4851,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.delete <span class="hljs-string">'/product/{id}'</span>,
+result = RestClient.get <span class="hljs-string">'/product/{id}'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -4866,14 +4863,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.delete(<span class="hljs-string">'/product/{id}'</span>, params={
+r = requests.get(<span class="hljs-string">'/product/{id}'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>DELETE /product/{id}</code></p>
+<p><code>GET /product/{id}</code></p>
 <h3 id="get-a-zuora-product-parameters">Parameters</h3>
 <table>
 <thead>
@@ -4943,8 +4940,8 @@ r = requests.delete(<span class="hljs-string">'/product/{id}'</span>, params={
 <aside class="success">
 This operation does not require authentication
 </aside>
-<h2 id="preview-of-cancel-operation">Preview of Cancel Operation</h2>
-<p><a id="opIdproductPreviewCancel"></a></p>
+<h2 id="delete-a-zuora-product">Delete a Zuora product</h2>
+<p><a id="opIddeleteProductById"></a></p>
 <blockquote>
 <p>Code samples</p>
 </blockquote>
@@ -4959,11 +4956,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{id}/preview/cancel"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"DELETE"</span>, <span class="hljs-string">"/product/{id}"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -4972,7 +4969,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{id}/preview/cancel</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">DELETE</span> <span class="hljs-string">/product/{id}</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -4984,7 +4981,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/product/{id}/preview/cancel'</span>,
+result = RestClient.delete <span class="hljs-string">'/product/{id}'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -4996,15 +4993,15 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/product/{id}/preview/cancel'</span>, params={
+r = requests.delete(<span class="hljs-string">'/product/{id}'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /product/{id}/preview/cancel</code></p>
-<h3 id="preview-of-cancel-operation-parameters">Parameters</h3>
+<p><code>DELETE /product/{id}</code></p>
+<h3 id="delete-a-zuora-product-parameters">Parameters</h3>
 <table>
 <thead>
 <tr>
@@ -5022,6 +5019,719 @@ r = requests.get(<span class="hljs-string">'/product/{id}/preview/cancel'</span>
 <td>integer</td>
 <td>true</td>
 <td>The ID of a Subscription Suite product</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"zuora_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"feature_list"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"highlight"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"sku"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"updated_date"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"tenant_id"</span>: <span class="hljs-number">0</span>
+}
+</code></pre>
+<h3 id="delete-a-zuora-product-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td><a href="#schemaproduct">Product</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Not found</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h1 id="subscription-suite-api-shop">shop</h1>
+<p>Query shop pages with multiple product selection steps</p>
+<h2 id="fetches-all-relevant-information-to-display-a-shop-page">Fetches all relevant information to display a shop page</h2>
+<p><a id="opIdgetShopPageById"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/page/{id}"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/page/{id}</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Accept</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.get <span class="hljs-string">'/page/{id}'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.get(<span class="hljs-string">'/page/{id}'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>GET /page/{id}</code></p>
+<h3 id="fetches-all-relevant-information-to-display-a-shop-page-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>The ID of a Subscription Suite shop page</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"allow_voucher"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"is_active"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"is_cart"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"page_id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"show_cart"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"steps"</span>: [
+    {
+      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
+      <span class="hljs-attr">"has_unique_selection"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"is_optional"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
+      <span class="hljs-attr">"number"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"rate_plans"</span>: [
+        {
+          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"feature_list"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"highlight"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"product"</span>: {
+            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
+            <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
+            <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
+            <span class="hljs-attr">"sku"</span>: <span class="hljs-string">"string"</span>
+          },
+          <span class="hljs-attr">"product_rate_plan_charges"</span>: [
+            {
+              <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
+              <span class="hljs-attr">"billing_timing"</span>: <span class="hljs-string">"string"</span>,
+              <span class="hljs-attr">"charge_model"</span>: <span class="hljs-string">"string"</span>,
+              <span class="hljs-attr">"charge_type"</span>: <span class="hljs-string">"string"</span>,
+              <span class="hljs-attr">"default_quantity"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
+              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
+              <span class="hljs-attr">"product_rate_plan_charge_tiers"</span>: [
+                {
+                  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+                  <span class="hljs-attr">"ending_unit"</span>: <span class="hljs-string">"string"</span>,
+                  <span class="hljs-attr">"is_overage_price"</span>: <span class="hljs-literal">true</span>,
+                  <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
+                  <span class="hljs-attr">"price_format"</span>: <span class="hljs-string">"string"</span>,
+                  <span class="hljs-attr">"starting_unit"</span>: <span class="hljs-string">"string"</span>
+                }
+              ],
+              <span class="hljs-attr">"tax_mode"</span>: <span class="hljs-string">"string"</span>,
+              <span class="hljs-attr">"is_taxable"</span>: <span class="hljs-literal">true</span>,
+              <span class="hljs-attr">"uom"</span>: <span class="hljs-string">"string"</span>
+            }
+          ]
+        }
+      ],
+      <span class="hljs-attr">"show_charges"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"show_description"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"show_featureList"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"show_periods"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"show_product_name"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"show_rate_plan_name"</span>: <span class="hljs-literal">true</span>
+    }
+  ]
+}
+</code></pre>
+<h3 id="fetches-all-relevant-information-to-display-a-shop-page-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Not found</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fetches-all-relevant-information-to-display-a-shop-page-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» allow_voucher</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» description</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» is_active</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» is_cart</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» page_id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» show_cart</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» steps</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» description</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» has_unique_selection</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» is_optional</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» number</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» rate_plans</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» description</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» effective_end_date</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» effective_start_date</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» feature_list</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» highlight</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» product</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» description</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» effective_end_date</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» effective_start_date</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» sku</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» product_rate_plan_charges</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» billing_period</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» billing_timing</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» charge_model</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» charge_type</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» default_quantity</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» description</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» id</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» product_rate_plan_charge_tiers</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»»» currency</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»»» ending_unit</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»»» is_overage_price</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»»» price</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»»» price_format</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»»» starting_unit</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» tax_mode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» is_taxable</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» uom</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» show_charges</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» show_description</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» show_featureList</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» show_periods</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» show_product_name</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» show_rate_plan_name</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h1 id="subscription-suite-api-subscription">subscription</h1>
+<p>Preview, create, and modify subscriptions</p>
+<h2 id="preview-of-cancel-operation">Preview of Cancel Operation</h2>
+<p><a id="opIdproductPreviewCancel"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{uuid}/preview/cancel"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{uuid}/preview/cancel</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Accept</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.get <span class="hljs-string">'/product/{uuid}/preview/cancel'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.get(<span class="hljs-string">'/product/{uuid}/preview/cancel'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>GET /product/{uuid}/preview/cancel</code></p>
+<h3 id="preview-of-cancel-operation-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>The UUID of a subscribed Subscription Suite product</td>
 </tr>
 </tbody>
 </table>
@@ -5089,11 +5799,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{id}/preview/replace/{changeOptionId}"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{uuid}/preview/replace/{changeOptionId}"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -5102,7 +5812,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{id}/preview/replace/{changeOptionId}</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{uuid}/preview/replace/{changeOptionId}</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -5114,7 +5824,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/product/{id}/preview/replace/{changeOptionId}'</span>,
+result = RestClient.get <span class="hljs-string">'/product/{uuid}/preview/replace/{changeOptionId}'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -5126,14 +5836,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/product/{id}/preview/replace/{changeOptionId}'</span>, params={
+r = requests.get(<span class="hljs-string">'/product/{uuid}/preview/replace/{changeOptionId}'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /product/{id}/preview/replace/{changeOptionId}</code></p>
+<p><code>GET /product/{uuid}/preview/replace/{changeOptionId}</code></p>
 <h3 id="preview-of-replace-operation-parameters">Parameters</h3>
 <table>
 <thead>
@@ -5147,11 +5857,11 @@ r = requests.get(<span class="hljs-string">'/product/{id}/preview/replace/{chang
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>uuid</td>
 <td>path</td>
-<td>integer</td>
+<td>string</td>
 <td>true</td>
-<td>The ID of a Subscription Suite product</td>
+<td>The UUID of a subscribed Subscription Suite product</td>
 </tr>
 <tr>
 <td>changeOptionId</td>
@@ -5226,11 +5936,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{id}/replace/{changeOptionId}"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{uuid}/replace/{changeOptionId}"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -5239,7 +5949,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{id}/replace/{changeOptionId}</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{uuid}/replace/{changeOptionId}</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -5251,7 +5961,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/product/{id}/replace/{changeOptionId}'</span>,
+result = RestClient.get <span class="hljs-string">'/product/{uuid}/replace/{changeOptionId}'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -5263,14 +5973,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/product/{id}/replace/{changeOptionId}'</span>, params={
+r = requests.get(<span class="hljs-string">'/product/{uuid}/replace/{changeOptionId}'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /product/{id}/replace/{changeOptionId}</code></p>
+<p><code>GET /product/{uuid}/replace/{changeOptionId}</code></p>
 <h3 id="replace-operation-parameters">Parameters</h3>
 <table>
 <thead>
@@ -5284,11 +5994,11 @@ r = requests.get(<span class="hljs-string">'/product/{id}/replace/{changeOptionI
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>uuid</td>
 <td>path</td>
-<td>integer</td>
+<td>string</td>
 <td>true</td>
-<td>The ID of a Subscription Suite product</td>
+<td>The UUID of a subscribed Subscription Suite product</td>
 </tr>
 <tr>
 <td>changeOptionId</td>
@@ -5363,11 +6073,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{id}/preview/change-quantity"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{uuid}/preview/change-quantity"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -5376,7 +6086,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{id}/preview/change-quantity</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{uuid}/preview/change-quantity</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -5388,7 +6098,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/product/{id}/preview/change-quantity'</span>,
+result = RestClient.get <span class="hljs-string">'/product/{uuid}/preview/change-quantity'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -5400,14 +6110,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/product/{id}/preview/change-quantity'</span>, params={
+r = requests.get(<span class="hljs-string">'/product/{uuid}/preview/change-quantity'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /product/{id}/preview/change-quantity</code></p>
+<p><code>GET /product/{uuid}/preview/change-quantity</code></p>
 <h3 id="initilization-of-change-quantity-operation-parameters">Parameters</h3>
 <table>
 <thead>
@@ -5421,11 +6131,11 @@ r = requests.get(<span class="hljs-string">'/product/{id}/preview/change-quantit
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>uuid</td>
 <td>path</td>
-<td>integer</td>
+<td>string</td>
 <td>true</td>
-<td>The ID of a Subscription Suite product</td>
+<td>The UUID of a subscribed Subscription Suite product</td>
 </tr>
 </tbody>
 </table>
@@ -5493,11 +6203,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{id}/preview/change-quantity/{quantity}"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/product/{uuid}/preview/change-quantity/{quantity}"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -5506,7 +6216,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{id}/preview/change-quantity/{quantity}</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/product/{uuid}/preview/change-quantity/{quantity}</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -5518,7 +6228,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/product/{id}/preview/change-quantity/{quantity}'</span>,
+result = RestClient.get <span class="hljs-string">'/product/{uuid}/preview/change-quantity/{quantity}'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -5530,14 +6240,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/product/{id}/preview/change-quantity/{quantity}'</span>, params={
+r = requests.get(<span class="hljs-string">'/product/{uuid}/preview/change-quantity/{quantity}'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /product/{id}/preview/change-quantity/{quantity}</code></p>
+<p><code>GET /product/{uuid}/preview/change-quantity/{quantity}</code></p>
 <h3 id="preview-of-change-quantity-operation-parameters">Parameters</h3>
 <table>
 <thead>
@@ -5551,11 +6261,11 @@ r = requests.get(<span class="hljs-string">'/product/{id}/preview/change-quantit
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>uuid</td>
 <td>path</td>
-<td>integer</td>
+<td>string</td>
 <td>true</td>
-<td>The ID of a Subscription Suite product</td>
+<td>The UUID of a subscribed Subscription Suite product</td>
 </tr>
 <tr>
 <td>quantity</td>
@@ -5614,726 +6324,6 @@ r = requests.get(<span class="hljs-string">'/product/{id}/preview/change-quantit
 <aside class="success">
 This operation does not require authentication
 </aside>
-<h2 id="change-quantity-operation">Change Quantity Operation</h2>
-<p><a id="opIdProductChangeQuantity"></a></p>
-<blockquote>
-<p>Code samples</p>
-</blockquote>
-<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
-
-<span class="hljs-keyword">import</span> (
-       <span class="hljs-string">"bytes"</span>
-       <span class="hljs-string">"net/http"</span>
-)
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
-
-    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
-        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
-    }
-
-    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"PUT"</span>, <span class="hljs-string">"/product/{id}/quantity/{quantity}"</span>, data)
-    req.Header = headers
-
-    client := &amp;http.Client{}
-    resp, err := client.Do(req)
-    <span class="hljs-comment">// ...</span>
-}
-
-</code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">PUT</span> <span class="hljs-string">/product/{id}/quantity/{quantity}</span> HTTP/1.1
-
-<span class="http"><span class="hljs-attribute">Accept</span>: application/json
-
-<span class="undefined"></span></span></code></pre>
-<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
-<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
-
-headers = {
-  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
-}
-
-result = RestClient.put <span class="hljs-string">'/product/{id}/quantity/{quantity}'</span>,
-  <span class="hljs-symbol">params:</span> {
-  }, <span class="hljs-symbol">headers:</span> headers
-
-p JSON.parse(result)
-
-</code></pre>
-<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
-headers = {
-  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
-}
-
-r = requests.put(<span class="hljs-string">'/product/{id}/quantity/{quantity}'</span>, params={
-
-}, headers = headers)
-
-<span class="hljs-keyword">print</span> r.json()
-
-</code></pre>
-<p><code>PUT /product/{id}/quantity/{quantity}</code></p>
-<h3 id="change-quantity-operation-parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>In</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>path</td>
-<td>integer</td>
-<td>true</td>
-<td>The ID of a Subscription Suite product</td>
-</tr>
-<tr>
-<td>quantity</td>
-<td>path</td>
-<td>integer</td>
-<td>true</td>
-<td>Product Quantity</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Example responses</p>
-</blockquote>
-<blockquote>
-<p>200 Response</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"zuora_id"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"feature_list"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"highlight"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"sku"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"updated_date"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"tenant_id"</span>: <span class="hljs-number">0</span>
-}
-</code></pre>
-<h3 id="change-quantity-operation-responses">Responses</h3>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Meaning</th>
-<th>Description</th>
-<th>Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
-<td>Success</td>
-<td><a href="#schemaproduct">Product</a></td>
-</tr>
-<tr>
-<td>404</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
-<td>Not found</td>
-<td>None</td>
-</tr>
-</tbody>
-</table>
-<aside class="success">
-This operation does not require authentication
-</aside>
-<h1 id="subscription-suite-api-shop">shop</h1>
-<p>Query shop pages with multiple product selection steps</p>
-<h2 id="fetches-all-relevant-information-to-display-a-shop-page">Fetches all relevant information to display a shop page</h2>
-<p><a id="opIdgetShopPageById"></a></p>
-<blockquote>
-<p>Code samples</p>
-</blockquote>
-<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
-
-<span class="hljs-keyword">import</span> (
-       <span class="hljs-string">"bytes"</span>
-       <span class="hljs-string">"net/http"</span>
-)
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
-
-    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
-        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
-    }
-
-    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/page/{id}"</span>, data)
-    req.Header = headers
-
-    client := &amp;http.Client{}
-    resp, err := client.Do(req)
-    <span class="hljs-comment">// ...</span>
-}
-
-</code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/page/{id}</span> HTTP/1.1
-
-<span class="http"><span class="hljs-attribute">Accept</span>: application/json
-
-<span class="undefined"></span></span></code></pre>
-<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
-<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
-
-headers = {
-  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
-}
-
-result = RestClient.get <span class="hljs-string">'/page/{id}'</span>,
-  <span class="hljs-symbol">params:</span> {
-  }, <span class="hljs-symbol">headers:</span> headers
-
-p JSON.parse(result)
-
-</code></pre>
-<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
-headers = {
-  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
-}
-
-r = requests.get(<span class="hljs-string">'/page/{id}'</span>, params={
-
-}, headers = headers)
-
-<span class="hljs-keyword">print</span> r.json()
-
-</code></pre>
-<p><code>GET /page/{id}</code></p>
-<h3 id="fetches-all-relevant-information-to-display-a-shop-page-parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>In</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>path</td>
-<td>string</td>
-<td>true</td>
-<td>The ID of a Subscription Suite shop page</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Example responses</p>
-</blockquote>
-<blockquote>
-<p>200 Response</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"allowVoucher"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"isActive"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"isCart"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"pageId"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"showCart"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"steps"</span>: [
-    {
-      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"hasUniqueSelection"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"isOptional"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"number"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"ratePlans"</span>: [
-        {
-          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"effectiveEndDate"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"effectiveStartDate"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"featureList"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"highlight"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"product"</span>: {
-            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"effectiveEndDate"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"effectiveStartDate"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"sku"</span>: <span class="hljs-string">"string"</span>
-          },
-          <span class="hljs-attr">"productRatePlanCharges"</span>: [
-            {
-              <span class="hljs-attr">"billingPeriod"</span>: <span class="hljs-string">"string"</span>,
-              <span class="hljs-attr">"billingTiming"</span>: <span class="hljs-string">"string"</span>,
-              <span class="hljs-attr">"chargeModel"</span>: <span class="hljs-string">"string"</span>,
-              <span class="hljs-attr">"chargeType"</span>: <span class="hljs-string">"string"</span>,
-              <span class="hljs-attr">"defaultQuantity"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
-              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-              <span class="hljs-attr">"productRatePlanChargeTiers"</span>: [
-                {
-                  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-                  <span class="hljs-attr">"endingUnit"</span>: <span class="hljs-string">"string"</span>,
-                  <span class="hljs-attr">"isOveragePrice"</span>: <span class="hljs-literal">true</span>,
-                  <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-                  <span class="hljs-attr">"priceFormat"</span>: <span class="hljs-string">"string"</span>,
-                  <span class="hljs-attr">"startingUnit"</span>: <span class="hljs-string">"string"</span>
-                }
-              ],
-              <span class="hljs-attr">"taxMode"</span>: <span class="hljs-string">"string"</span>,
-              <span class="hljs-attr">"isTaxable"</span>: <span class="hljs-literal">true</span>,
-              <span class="hljs-attr">"uom"</span>: <span class="hljs-string">"string"</span>
-            }
-          ]
-        }
-      ],
-      <span class="hljs-attr">"showCharges"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">"showDescription"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">"showFeatureList"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">"showPeriods"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">"showProductName"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">"showRatePlanName"</span>: <span class="hljs-literal">true</span>
-    }
-  ]
-}
-</code></pre>
-<h3 id="fetches-all-relevant-information-to-display-a-shop-page-responses">Responses</h3>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Meaning</th>
-<th>Description</th>
-<th>Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
-<td>Success</td>
-<td>Inline</td>
-</tr>
-<tr>
-<td>404</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
-<td>Not found</td>
-<td>None</td>
-</tr>
-</tbody>
-</table>
-<h3 id="fetches-all-relevant-information-to-display-a-shop-page-responseschema">Response Schema</h3>
-<p>Status Code <strong>200</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Required</th>
-<th>Restrictions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>» allowVoucher</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» description</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» id</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» isActive</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» isCart</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» name</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» pageId</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» showCart</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» steps</td>
-<td>[object]</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» description</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» hasUniqueSelection</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» id</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» isOptional</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» name</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» number</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» ratePlans</td>
-<td>[object]</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» description</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» effectiveEndDate</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» effectiveStartDate</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» featureList</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» highlight</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» id</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» name</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» product</td>
-<td>object</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» description</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» effectiveEndDate</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» effectiveStartDate</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» name</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» sku</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» productRatePlanCharges</td>
-<td>[object]</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» billingPeriod</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» billingTiming</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» chargeModel</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» chargeType</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» defaultQuantity</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» description</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» id</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» name</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» productRatePlanChargeTiers</td>
-<td>[object]</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»»» currency</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»»» endingUnit</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»»» isOveragePrice</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»»» price</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»»» priceFormat</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»»» startingUnit</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» taxMode</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» isTaxable</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»»» uom</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» showCharges</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» showDescription</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» showFeatureList</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» showPeriods</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» showProductName</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» showRatePlanName</td>
-<td>boolean</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-</tbody>
-</table>
-<aside class="success">
-This operation does not require authentication
-</aside>
-<h1 id="subscription-suite-api-subscription">subscription</h1>
-<p>Preview, create, and modify subscriptions</p>
 <h2 id="create-new-subscriptions-for-a-user">Create new subscriptions for a user</h2>
 <p><a id="opIdcreateSubscriptions"></a></p>
 <blockquote>
@@ -6352,7 +6342,7 @@ This operation does not require authentication
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6405,20 +6395,60 @@ r = requests.post(<span class="hljs-string">'/subscription'</span>, params={
 <blockquote>
 <p>Body parameter</p>
 </blockquote>
-<pre class="highlight tab tab-json"><code>[
-  {
-    <span class="hljs-attr">"ratePlan"</span>: {
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"suite_products"</span>: [
+    {
       <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
-    },
-    <span class="hljs-attr">"charges"</span>: [
-      {
-        <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-        <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
-      }
-    ]
-  }
-]
+      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"rate_plans"</span>: [
+        {
+          <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"charges"</span>: [
+            {
+              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  <span class="hljs-attr">"account"</span>: {
+    <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+  },
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"voucher_rate_plans"</span>: [
+    {
+      <span class="hljs-attr">"rate_plan_id"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>
+    }
+  ]
+}
 </code></pre>
 <h3 id="create-new-subscriptions-for-a-user-parameters">Parameters</h3>
 <table>
@@ -6435,7 +6465,7 @@ r = requests.post(<span class="hljs-string">'/subscription'</span>, params={
 <tr>
 <td>body</td>
 <td>body</td>
-<td>array[object]</td>
+<td><a href="#schemasubscribeoption">SubscribeOption</a></td>
 <td>false</td>
 <td>none</td>
 </tr>
@@ -6529,7 +6559,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6580,20 +6610,60 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 <blockquote>
 <p>Body parameter</p>
 </blockquote>
-<pre class="highlight tab tab-json"><code>[
-  {
-    <span class="hljs-attr">"ratePlan"</span>: {
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"suite_products"</span>: [
+    {
       <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
-    },
-    <span class="hljs-attr">"charges"</span>: [
-      {
-        <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-        <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
-      }
-    ]
-  }
-]
+      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"rate_plans"</span>: [
+        {
+          <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"charges"</span>: [
+            {
+              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  <span class="hljs-attr">"account"</span>: {
+    <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+  },
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"voucher_rate_plans"</span>: [
+    {
+      <span class="hljs-attr">"rate_plan_id"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>
+    }
+  ]
+}
 </code></pre>
 <h3 id="calculate-prices-for-selected-rate-plans--quantities--and-discounts-parameters">Parameters</h3>
 <table>
@@ -6610,7 +6680,7 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 <tr>
 <td>body</td>
 <td>body</td>
-<td>array[object]</td>
+<td><a href="#schemasubscribeoption">SubscribeOption</a></td>
 <td>false</td>
 <td>none</td>
 </tr>
@@ -6624,20 +6694,53 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 </blockquote>
 <pre class="highlight tab tab-json"><code>[
   {
-    <span class="hljs-attr">"ratePlan"</span>: {
-      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"total"</span>: <span class="hljs-number">0</span>
-    },
-    <span class="hljs-attr">"charges"</span>: [
+    <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"prices"</span>: [
+      {
+        <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
+        <span class="hljs-attr">"is_discounted"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"netto"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">"brutto"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">"original_netto"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">"original_tax"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">"original_brutto"</span>: <span class="hljs-number">0</span>
+      }
+    ],
+    <span class="hljs-attr">"rate_plans"</span>: [
       {
         <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
         <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-        <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-        <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
-        <span class="hljs-attr">"total"</span>: <span class="hljs-number">0</span>
+        <span class="hljs-attr">"prices"</span>: [
+          {
+            <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
+            <span class="hljs-attr">"is_discounted"</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">"netto"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"brutto"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"original_netto"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"original_tax"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"original_brutto"</span>: <span class="hljs-number">0</span>
+          }
+        ],
+        <span class="hljs-attr">"charges"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
+            <span class="hljs-attr">"prices"</span>: {
+              <span class="hljs-attr">"is_discounted"</span>: <span class="hljs-literal">true</span>,
+              <span class="hljs-attr">"netto"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"brutto"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"original_netto"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"original_tax"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"original_brutto"</span>: <span class="hljs-number">0</span>
+            }
+          }
+        ]
       }
     ]
   }
@@ -6689,28 +6792,49 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 <td>none</td>
 </tr>
 <tr>
-<td>» ratePlan</td>
-<td>object</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» id</td>
+<td>» id</td>
 <td>integer</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» quantity</td>
+<td>» quantity</td>
 <td>integer</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» price</td>
+<td>» order_pos</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» prices</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» billing_period</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» is_discounted</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» netto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
@@ -6724,14 +6848,35 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 <td>none</td>
 </tr>
 <tr>
-<td>»» total</td>
+<td>»» brutto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» charges</td>
+<td>»» original_netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» original_tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» original_brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» rate_plans</td>
 <td>[object]</td>
 <td>false</td>
 <td>none</td>
@@ -6752,21 +6897,147 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 <td>none</td>
 </tr>
 <tr>
-<td>»» price</td>
+<td>»» prices</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» billing_period</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» is_discounted</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» netto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» tax</td>
+<td>»»» tax</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>»» total</td>
+<td>»»» brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» original_netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» original_tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» original_brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» charges</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» quantity</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» billing_period</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» prices</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» is_discounted</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» original_netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» original_tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»»» original_brutto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
@@ -6795,7 +7066,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6943,7 +7214,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7110,7 +7381,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7162,8 +7433,8 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/init'</span>, 
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"pageId"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"userId"</span>: <span class="hljs-number">0</span>
+  <span class="hljs-attr">"page_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"user_id"</span>: <span class="hljs-number">0</span>
 }
 </code></pre>
 <h3 id="initialize-a-voucher-code-and-block-it-for-a-certain-user-in-case-of-a-single-use-code-parameters">Parameters</h3>
@@ -7193,14 +7464,14 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/init'</span>, 
 <td>none</td>
 </tr>
 <tr>
-<td>» pageId</td>
+<td>» page_id</td>
 <td>body</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» userId</td>
+<td>» user_id</td>
 <td>body</td>
 <td>integer</td>
 <td>false</td>
@@ -7215,7 +7486,8 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/init'</span>, 
 <p>200 Response</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"discountRatePlanId"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"discount_rate_plan_id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"success"</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
@@ -7258,7 +7530,14 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/init'</span>, 
 </thead>
 <tbody>
 <tr>
-<td>» discountRatePlanId</td>
+<td>» discount_rate_plan_id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» campaign_id</td>
 <td>integer</td>
 <td>false</td>
 <td>none</td>
@@ -7293,7 +7572,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7345,8 +7624,8 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/consume'</span
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"pageId"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"userId"</span>: <span class="hljs-number">0</span>
+  <span class="hljs-attr">"page_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"user_id"</span>: <span class="hljs-number">0</span>
 }
 </code></pre>
 <h3 id="confirm-and-consume-a-voucher-code-parameters">Parameters</h3>
@@ -7376,14 +7655,14 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/consume'</span
 <td>none</td>
 </tr>
 <tr>
-<td>» pageId</td>
+<td>» page_id</td>
 <td>body</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» userId</td>
+<td>» user_id</td>
 <td>body</td>
 <td>integer</td>
 <td>false</td>
@@ -7398,7 +7677,8 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/consume'</span
 <p>200 Response</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"discountRatePlanId"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"discount_rate_plan_id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"success"</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
@@ -7441,7 +7721,14 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/consume'</span
 </thead>
 <tbody>
 <tr>
-<td>» discountRatePlanId</td>
+<td>» discount_rate_plan_id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» campaign_id</td>
 <td>integer</td>
 <td>false</td>
 <td>none</td>
@@ -7453,368 +7740,6 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/consume'</span
 <td>false</td>
 <td>none</td>
 <td>none</td>
-</tr>
-</tbody>
-</table>
-<aside class="success">
-This operation does not require authentication
-</aside>
-<h1 id="subscription-suite-api-suite-product">suite-product</h1>
-<h2 id="get-a-suite-product-by-id">Get a suite product by id</h2>
-<p><a id="opIdgetSuiteProductById"></a></p>
-<blockquote>
-<p>Code samples</p>
-</blockquote>
-<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
-
-<span class="hljs-keyword">import</span> (
-       <span class="hljs-string">"bytes"</span>
-       <span class="hljs-string">"net/http"</span>
-)
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
-
-    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
-        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
-    }
-
-    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/suite-product/{id}"</span>, data)
-    req.Header = headers
-
-    client := &amp;http.Client{}
-    resp, err := client.Do(req)
-    <span class="hljs-comment">// ...</span>
-}
-
-</code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/suite-product/{id}</span> HTTP/1.1
-
-<span class="http"><span class="hljs-attribute">Accept</span>: application/json
-
-<span class="undefined"></span></span></code></pre>
-<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
-<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
-
-headers = {
-  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
-}
-
-result = RestClient.get <span class="hljs-string">'/suite-product/{id}'</span>,
-  <span class="hljs-symbol">params:</span> {
-  }, <span class="hljs-symbol">headers:</span> headers
-
-p JSON.parse(result)
-
-</code></pre>
-<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
-headers = {
-  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
-}
-
-r = requests.get(<span class="hljs-string">'/suite-product/{id}'</span>, params={
-
-}, headers = headers)
-
-<span class="hljs-keyword">print</span> r.json()
-
-</code></pre>
-<p><code>GET /suite-product/{id}</code></p>
-<h3 id="get-a-suite-product-by-id-parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>In</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>path</td>
-<td>integer</td>
-<td>true</td>
-<td>The ID of a Suite Product</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Example responses</p>
-</blockquote>
-<blockquote>
-<p>200 Response</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"feature_list"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"different_quantities_allowed"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"different_quantities_allowed_for_charge"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"purchasable_by_customer"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"purchasable_by_partner"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"purchasable_by_sales"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"multiple_subscriptions_allowed"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"tenant_id"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"subscription_type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"renewal_type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"term"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"renewal_term"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"is_auto_renew"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"cancel_behaviour"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"quantity_upgrade_behaviour"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"quantity_downgrade_behaviour"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"upgrade_behaviour"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"downgrade_behaviour"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"new_subscribe_mode"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"add_on_mode"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"has_contact_us_link"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"trusted_html"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"quantity_level"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"price_level"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"cancel_period"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"generated_id"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"cancel_mode"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"quantity_upgrade_mode"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"quantity_downgrade_mode"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"upgrade_mode"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"downgrade_mode"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"categories"</span>: [],
-  <span class="hljs-attr">"add_ons"</span>: [],
-  <span class="hljs-attr">"change_options"</span>: [],
-  <span class="hljs-attr">"subscription"</span>: {
-    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"account_id"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"account_number"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"account_name"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"invoice_owner_account_id"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"invoice_owner_account_number"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"invoice_owner_account_name"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"subscription_number"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"term_type"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"invoice_separately"</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">"contract_effective_date"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"service_activation_date"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"customer_acceptance_date"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"subscription_start_date"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"term_start_date"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"term_end_date"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"initial_term"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"initial_term_period_type"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"current_term"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"current_term_period_type"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"auto_renew"</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">"renewal_setting"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"renewal_term"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"renewal_term_period_type"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"contracted_mrr"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"total_contracted_value"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"status"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"rate_plans"</span>: [
-      {
-        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_name"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_sku"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_rate_plan_id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"rate_plan_name"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"suite_product_id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"suite_product_uuid"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"rate_plan_charges"</span>: [
-          {
-            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"original_charge_id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"product_rate_plan_charge_id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"number"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"model"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"version"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"pricing_summary"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"price_change_option"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"price_increase_percentage"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"discount_apply_details"</span>: [],
-            <span class="hljs-attr">"billing_day"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"list_price_base"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"billing_timing"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"billing_period_alignment"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"segment"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"processed_through_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"charged_through_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"done"</span>: <span class="hljs-literal">true</span>,
-            <span class="hljs-attr">"trigger_event"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"end_date_condition"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"mrr"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"dmrc"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"tcv"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"dtcv"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>
-          }
-        ],
-        <span class="hljs-attr">"subscription_product_features"</span>: [
-          {
-            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"feature_code"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>
-          }
-        ]
-      }
-    ],
-    <span class="hljs-attr">"latest_rate_plans"</span>: [
-      {
-        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_name"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_sku"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"product_rate_plan_id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"rate_plan_name"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"suite_product_id"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"suite_product_uuid"</span>: <span class="hljs-string">"string"</span>,
-        <span class="hljs-attr">"rate_plan_charges"</span>: [
-          {
-            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"original_charge_id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"product_rate_plan_charge_id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"number"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"model"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"version"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"pricing_summary"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"price_change_option"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"price_increase_percentage"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"discount_apply_details"</span>: [],
-            <span class="hljs-attr">"billing_day"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"list_price_base"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"billing_timing"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"billing_period_alignment"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"segment"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"processed_through_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"charged_through_date"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"done"</span>: <span class="hljs-literal">true</span>,
-            <span class="hljs-attr">"trigger_event"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"end_date_condition"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"mrr"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"dmrc"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"tcv"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"dtcv"</span>: <span class="hljs-number">0</span>,
-            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>
-          }
-        ],
-        <span class="hljs-attr">"subscription_product_features"</span>: [
-          {
-            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"feature_code"</span>: <span class="hljs-string">"string"</span>,
-            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>
-          }
-        ]
-      }
-    ],
-    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-18"</span>
-  },
-  <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"rate_plans"</span>: [
-    {
-      <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"product_name"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"product_sku"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"product_rate_plan_id"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"rate_plan_name"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"suite_product_id"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"suite_product_uuid"</span>: <span class="hljs-string">"string"</span>,
-      <span class="hljs-attr">"rate_plan_charges"</span>: [
-        {
-          <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"original_charge_id"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"product_rate_plan_charge_id"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"number"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"model"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"version"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"pricing_summary"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"price_change_option"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"price_increase_percentage"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"discount_apply_details"</span>: [],
-          <span class="hljs-attr">"billing_day"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"list_price_base"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"billing_timing"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"billing_period_alignment"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"segment"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"processed_through_date"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"charged_through_date"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"done"</span>: <span class="hljs-literal">true</span>,
-          <span class="hljs-attr">"trigger_event"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"end_date_condition"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"mrr"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"dmrc"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"tcv"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"dtcv"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>
-        }
-      ],
-      <span class="hljs-attr">"subscription_product_features"</span>: [
-        {
-          <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"feature_code"</span>: <span class="hljs-string">"string"</span>,
-          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>
-        }
-      ]
-    }
-  ],
-  <span class="hljs-attr">"uuid"</span>: <span class="hljs-string">"string"</span>
-}
-</code></pre>
-<h3 id="get-a-suite-product-by-id-responses">Responses</h3>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Meaning</th>
-<th>Description</th>
-<th>Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
-<td>Success</td>
-<td><a href="#schemasuiteproduct">SuiteProduct</a></td>
-</tr>
-<tr>
-<td>404</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
-<td>Not found</td>
-<td>None</td>
 </tr>
 </tbody>
 </table>
@@ -7838,7 +7763,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7962,13 +7887,156 @@ r = requests.get(<span class="hljs-string">'/config'</span>, params={
 <aside class="success">
 This operation does not require authentication
 </aside>
+<h1 id="subscription-suite-api-string">string</h1>
+<h2 id="change-quantity-operation">Change Quantity Operation</h2>
+<p><a id="opIdProductChangeQuantity"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"PUT"</span>, <span class="hljs-string">"/product/{uuid}/quantity/{quantity}"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">PUT</span> <span class="hljs-string">/product/{uuid}/quantity/{quantity}</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Accept</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.put <span class="hljs-string">'/product/{uuid}/quantity/{quantity}'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.put(<span class="hljs-string">'/product/{uuid}/quantity/{quantity}'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>PUT /product/{uuid}/quantity/{quantity}</code></p>
+<h3 id="change-quantity-operation-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>The UUID of a subscribed Subscription Suite product</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>path</td>
+<td>integer</td>
+<td>true</td>
+<td>Product Quantity</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"zuora_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"feature_list"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"highlight"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"effective_start_date"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"effective_end_date"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"sku"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"updated_date"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"tenant_id"</span>: <span class="hljs-number">0</span>
+}
+</code></pre>
+<h3 id="change-quantity-operation-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td><a href="#schemaproduct">Product</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Not found</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
 <h1 id="schemas">Schemas</h1>
 <h2 id="tocsaccountpaymentmethod">AccountPaymentMethod</h2>
 <p><a id="schemaaccountpaymentmethod"></a></p>
 <pre class="highlight tab tab-json"><code>{
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"data"</span>: {}
+  <span class="hljs-attr">"credit_card_number"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"credit_card_holder"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"credit_card_expiration_month"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"credit_card_expiration_year"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"iban"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"bank_account_holder"</span>: <span class="hljs-string">"string"</span>
 }
 
 </code></pre>
@@ -7999,8 +8067,43 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>data</td>
-<td>object</td>
+<td>credit_card_number</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>credit_card_holder</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>credit_card_expiration_month</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>credit_card_expiration_year</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>iban</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>bank_account_holder</td>
+<td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
@@ -8223,8 +8326,8 @@ This operation does not require authentication
 <p><a id="schemainvoice"></a></p>
 <pre class="highlight tab tab-json"><code>{
   <span class="hljs-attr">"payment_amount"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-04-18"</span>,
-  <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-04-18"</span>,
+  <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
+  <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
   <span class="hljs-attr">"tax_amount"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"amount"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"balance"</span>: <span class="hljs-number">0</span>,
@@ -8495,7 +8598,7 @@ This operation does not require authentication
         ]
       }
     ],
-    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-18"</span>
+    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
   },
   <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"rate_plans"</span>: [
@@ -9018,7 +9121,7 @@ This operation does not require authentication
       ]
     }
   ],
-  <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-18"</span>
+  <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
 }
 
 </code></pre>
@@ -9870,7 +9973,7 @@ This operation does not require authentication
         ]
       }
     ],
-    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-18"</span>
+    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
   },
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"string"</span>,
@@ -10503,13 +10606,13 @@ This operation does not require authentication
   <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"county"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"fax"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"firstName"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"lastName"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"taxRegion"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"workEmail"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"workPhone"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"zipCode"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"tax_region"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"work_email"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"work_phone"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>
 }
 
 </code></pre>
@@ -10568,14 +10671,14 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>firstName</td>
+<td>first_name</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>lastName</td>
+<td>last_name</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
@@ -10589,28 +10692,28 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>taxRegion</td>
+<td>tax_region</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>workEmail</td>
+<td>work_email</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>workPhone</td>
+<td>work_phone</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>zipCode</td>
+<td>zip_code</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
@@ -10621,14 +10724,11 @@ This operation does not require authentication
 <h2 id="tocspaymentmethod">PaymentMethod</h2>
 <p><a id="schemapaymentmethod"></a></p>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardNumber"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardHolder"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"creditCardExpirationMonth"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"creditCardExpirationYear"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"iban"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"bankAccountHolder"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"token"</span>: <span class="hljs-string">"string"</span>
+  }
 }
 
 </code></pre>
@@ -10645,13 +10745,6 @@ This operation does not require authentication
 </thead>
 <tbody>
 <tr>
-<td>id</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
 <td>type</td>
 <td>string</td>
 <td>false</td>
@@ -10659,42 +10752,21 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>creditCardNumber</td>
+<td>data</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» id</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>creditCardHolder</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>creditCardExpirationMonth</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>creditCardExpirationYear</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>iban</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>bankAccountHolder</td>
+<td>» token</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
@@ -10849,14 +10921,56 @@ This operation does not require authentication
 <h2 id="tocssubscribeoption">SubscribeOption</h2>
 <p><a id="schemasubscribeoption"></a></p>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"ratePlan"</span>: {
-    <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
-  },
-  <span class="hljs-attr">"charges"</span>: [
+  <span class="hljs-attr">"suite_products"</span>: [
     {
       <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
+      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"rate_plans"</span>: [
+        {
+          <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"charges"</span>: [
+            {
+              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  <span class="hljs-attr">"account"</span>: {
+    <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+  },
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"voucher_rate_plans"</span>: [
+    {
+      <span class="hljs-attr">"rate_plan_id"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>
     }
   ]
 }
@@ -10875,28 +10989,7 @@ This operation does not require authentication
 </thead>
 <tbody>
 <tr>
-<td>ratePlan</td>
-<td>object</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» id</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» quantity</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>charges</td>
+<td>suite_products</td>
 <td>[object]</td>
 <td>false</td>
 <td>none</td>
@@ -10911,6 +11004,90 @@ This operation does not require authentication
 </tr>
 <tr>
 <td>» quantity</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» order_pos</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» rate_plans</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» quantity</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» charges</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» quantity</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» account</td>
+<td><a href="#schemaaccount">Account</a></td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» currency</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» voucher_rate_plans</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» rate_plan_id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» campaign_id</td>
 <td>integer</td>
 <td>false</td>
 <td>none</td>
@@ -10921,20 +11098,53 @@ This operation does not require authentication
 <h2 id="tocssubscribeoptionwithprice">SubscribeOptionWithPrice</h2>
 <p><a id="schemasubscribeoptionwithprice"></a></p>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"ratePlan"</span>: {
-    <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"total"</span>: <span class="hljs-number">0</span>
-  },
-  <span class="hljs-attr">"charges"</span>: [
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"prices"</span>: [
+    {
+      <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
+      <span class="hljs-attr">"is_discounted"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">"netto"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"brutto"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"original_netto"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"original_tax"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"original_brutto"</span>: <span class="hljs-number">0</span>
+    }
+  ],
+  <span class="hljs-attr">"rate_plans"</span>: [
     {
       <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
       <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"price"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"total"</span>: <span class="hljs-number">0</span>
+      <span class="hljs-attr">"prices"</span>: [
+        {
+          <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"is_discounted"</span>: <span class="hljs-literal">true</span>,
+          <span class="hljs-attr">"netto"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"brutto"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"original_netto"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"original_tax"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"original_brutto"</span>: <span class="hljs-number">0</span>
+        }
+      ],
+      <span class="hljs-attr">"charges"</span>: [
+        {
+          <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-attr">"billing_period"</span>: <span class="hljs-string">"string"</span>,
+          <span class="hljs-attr">"prices"</span>: {
+            <span class="hljs-attr">"is_discounted"</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">"netto"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"tax"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"brutto"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"original_netto"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"original_tax"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">"original_brutto"</span>: <span class="hljs-number">0</span>
+          }
+        }
+      ]
     }
   ]
 }
@@ -10953,28 +11163,49 @@ This operation does not require authentication
 </thead>
 <tbody>
 <tr>
-<td>ratePlan</td>
-<td>object</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» id</td>
+<td>id</td>
 <td>integer</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» quantity</td>
+<td>quantity</td>
 <td>integer</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» price</td>
+<td>order_pos</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>prices</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» billing_period</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» is_discounted</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» netto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
@@ -10988,14 +11219,35 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>» total</td>
+<td>» brutto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>charges</td>
+<td>» original_netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» original_tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» original_brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>rate_plans</td>
 <td>[object]</td>
 <td>false</td>
 <td>none</td>
@@ -11016,21 +11268,147 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>» price</td>
+<td>» prices</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» billing_period</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» is_discounted</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» netto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» tax</td>
+<td>»» tax</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>» total</td>
+<td>»» brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» original_netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» original_tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» original_brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» charges</td>
+<td>[object]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» quantity</td>
+<td>integer</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» billing_period</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» prices</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» is_discounted</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» brutto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» original_netto</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» original_tax</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»»» original_brutto</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
@@ -11041,27 +11419,27 @@ This operation does not require authentication
 
       </div>
       <div class="dark-box">
-
+        
           <div class="lang-selector">
-
-
+            
+              
                 <a href="#" data-language-name="go">Go</a>
-
-
-
+              
+            
+              
                 <a href="#" data-language-name="http">HTTP</a>
-
-
-
+              
+            
+              
                 <a href="#" data-language-name="ruby">Ruby</a>
-
-
-
+              
+            
+              
                 <a href="#" data-language-name="python">Python</a>
-
-
+              
+            
           </div>
-
+        
       </div>
     </div>
   </body>
