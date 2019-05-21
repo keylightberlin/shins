@@ -13,11 +13,11 @@ headingLevel: 2
 
 ---
 
-<h1 id="subscription-suite-api">Subscription Suite API v1.0.0</h1>
+<h1 id="subscription-suite-api">Subscription Suite API v2.1.0</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-This is the API that is used by the Subscription Suite Angular 6 frontend components. You can find out more about Subscription Suite at [https://www.subscription-suite.com](https://www.subscription-suite.com).
+This is the API that is used by the Subscription Suite Angular 7 frontend components. You can find out more about Subscription Suite at [https://www.subscription-suite.com](https://www.subscription-suite.com).
 
 Email: <a href="mailto:hello@keylight.de">Support</a> 
 
@@ -112,21 +112,19 @@ print r.json()
 
 ```json
 {
+  "is_company": true,
   "company_name": "string",
-  "currency": "string",
   "first_name": "string",
   "last_name": "string",
   "street": "string",
-  "additional_info": "string",
   "zip_code": "string",
   "city": "string",
   "state": "string",
   "country": "string",
   "email": "string",
   "phone": "string",
-  "vat_id": "string",
+  "additional_info": "string",
   "has_billing_address": true,
-  "is_company": true,
   "billing_first_name": "string",
   "billing_last_name": "string",
   "billing_street": "string",
@@ -135,7 +133,9 @@ print r.json()
   "billing_city": "string",
   "billing_country": "string",
   "billing_email": "string",
-  "billing_phone": "string"
+  "billing_phone": "string",
+  "vat_id": "string",
+  "currency": "string"
 }
 ```
 
@@ -233,21 +233,19 @@ print r.json()
 
 ```json
 {
+  "is_company": true,
   "company_name": "string",
-  "currency": "string",
   "first_name": "string",
   "last_name": "string",
   "street": "string",
-  "additional_info": "string",
   "zip_code": "string",
   "city": "string",
   "state": "string",
   "country": "string",
   "email": "string",
   "phone": "string",
-  "vat_id": "string",
+  "additional_info": "string",
   "has_billing_address": true,
-  "is_company": true,
   "billing_first_name": "string",
   "billing_last_name": "string",
   "billing_street": "string",
@@ -256,7 +254,9 @@ print r.json()
   "billing_city": "string",
   "billing_country": "string",
   "billing_email": "string",
-  "billing_phone": "string"
+  "billing_phone": "string",
+  "vat_id": "string",
+  "currency": "string"
 }
 ```
 
@@ -379,12 +379,7 @@ print r.json()
 {
   "id": "string",
   "type": "string",
-  "credit_card_number": "string",
-  "credit_card_holder": "string",
-  "credit_card_expiration_month": 0,
-  "credit_card_expiration_year": 0,
-  "iban": "string",
-  "bank_account_holder": "string"
+  "data": {}
 }
 ```
 
@@ -481,10 +476,11 @@ print r.json()
 
 ```json
 {
+  "id": "string",
   "type": "string",
   "data": {
-    "id": "string",
-    "token": "string"
+    "bank_transfer_account_number_mask": "string",
+    "bank_transfer_account_name": "string"
   }
 }
 ```
@@ -493,7 +489,7 @@ print r.json()
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[PaymentMethod](#schemapaymentmethod)|true|none|
+|body|body|any|true|none|
 
 > Example responses
 
@@ -608,8 +604,8 @@ print r.json()
 [
   {
     "payment_amount": 0,
-    "invoice_date": "2019-04-21",
-    "due_date": "2019-04-21",
+    "invoice_date": "2019-05-21",
+    "due_date": "2019-05-21",
     "tax_amount": 0,
     "amount": 0,
     "balance": 0,
@@ -1005,7 +1001,7 @@ print r.json()
           ]
         }
       ],
-      "current_end_date": "2019-04-21"
+      "current_end_date": "2019-05-21"
     },
     "quantity": 0,
     "rate_plans": [
@@ -1538,7 +1534,7 @@ print r.json()
           ]
         }
       ],
-      "current_end_date": "2019-04-21"
+      "current_end_date": "2019-05-21"
     },
     "id": "string",
     "product_id": "string",
@@ -1731,7 +1727,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/payment-method/{id}", data)
+    req, err := http.NewRequest("GET", "/payment-method/{paymentMethodId}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1742,7 +1738,7 @@ func main() {
 ```
 
 ```http
-GET /payment-method/{id} HTTP/1.1
+GET /payment-method/{paymentMethodId} HTTP/1.1
 
 Accept: application/json
 
@@ -1756,7 +1752,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get '/payment-method/{id}',
+result = RestClient.get '/payment-method/{paymentMethodId}',
   params: {
   }, headers: headers
 
@@ -1770,7 +1766,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('/payment-method/{id}', params={
+r = requests.get('/payment-method/{paymentMethodId}', params={
 
 }, headers = headers)
 
@@ -1778,13 +1774,13 @@ print r.json()
 
 ```
 
-`GET /payment-method/{id}`
+`GET /payment-method/{paymentMethodId}`
 
 <h3 id="get-a-payment-method-by-zuora-id-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|id|path|string|true|The Zuora ID of a payment method|
+|paymentMethodId|path|string|true|The Zuora ID of a payment method|
 
 > Example responses
 
@@ -1833,7 +1829,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/payment-method/{id}/signature", data)
+    req, err := http.NewRequest("GET", "/payment-method/{paymentMethodId}/signature", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1844,7 +1840,7 @@ func main() {
 ```
 
 ```http
-GET /payment-method/{id}/signature HTTP/1.1
+GET /payment-method/{paymentMethodId}/signature HTTP/1.1
 
 Accept: application/json
 
@@ -1858,7 +1854,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get '/payment-method/{id}/signature',
+result = RestClient.get '/payment-method/{paymentMethodId}/signature',
   params: {
   }, headers: headers
 
@@ -1872,7 +1868,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('/payment-method/{id}/signature', params={
+r = requests.get('/payment-method/{paymentMethodId}/signature', params={
 
 }, headers = headers)
 
@@ -1880,13 +1876,13 @@ print r.json()
 
 ```
 
-`GET /payment-method/{id}/signature`
+`GET /payment-method/{paymentMethodId}/signature`
 
 <h3 id="get-the-signature-to-render-a-zuora-payment-page-in-an-iframe-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|id|path|integer|true|The ID of a Subscription Suite payment method|
+|paymentMethodId|path|string|true|The ID of a Subscription Suite payment method|
 |locale|query|string|false|Locale to render the Zuora payment page in certain language|
 
 > Example responses
@@ -2035,6 +2031,80 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
+## Initialise paypal for given payment method id
+
+<a id="opIdpaypalInit"></a>
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "/payment-method/{paymentMethodId}/paypal/init", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+GET /payment-method/{paymentMethodId}/paypal/init HTTP/1.1
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+result = RestClient.get '/payment-method/{paymentMethodId}/paypal/init',
+  params: {
+  }
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+
+r = requests.get('/payment-method/{paymentMethodId}/paypal/init', params={
+
+)
+
+print r.json()
+
+```
+
+`GET /payment-method/{paymentMethodId}/paypal/init`
+
+<h3 id="initialise-paypal-for-given-payment-method-id-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|paymentMethodId|path|string|true|Id of the payment Method|
+
+<h3 id="initialise-paypal-for-given-payment-method-id-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad request|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
 <h1 id="subscription-suite-api-quote">quote</h1>
 
 Quote acceptance processes with Salesforce integration
@@ -2061,7 +2131,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "/quote/{id}", data)
+    req, err := http.NewRequest("GET", "/quote/{guid}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -2072,7 +2142,7 @@ func main() {
 ```
 
 ```http
-GET /quote/{id} HTTP/1.1
+GET /quote/{guid} HTTP/1.1
 
 Accept: application/json
 
@@ -2086,7 +2156,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get '/quote/{id}',
+result = RestClient.get '/quote/{guid}',
   params: {
   }, headers: headers
 
@@ -2100,7 +2170,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('/quote/{id}', params={
+r = requests.get('/quote/{guid}', params={
 
 }, headers = headers)
 
@@ -2108,13 +2178,13 @@ print r.json()
 
 ```
 
-`GET /quote/{id}`
+`GET /quote/{guid}`
 
 <h3 id="get-quote-data-from-salesforce-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|id|path|string|true|The ID of a Salesforce quote|
+|guid|path|string|true|The GUID of a Salesforce quote|
 
 > Example responses
 
@@ -2161,9 +2231,9 @@ print r.json()
     "work_phone": "string",
     "zip_code": "string"
   },
-  "start_date": "2019-04-21",
+  "start_date": "2019-05-21",
   "term": "string",
-  "valid_until_date": "2019-04-21",
+  "valid_until_date": "2019-05-21",
   "vat_id": "string"
 }
 ```
@@ -2233,7 +2303,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "/quote/{id}", data)
+    req, err := http.NewRequest("POST", "/quote/{guid}/confirm", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -2244,7 +2314,7 @@ func main() {
 ```
 
 ```http
-POST /quote/{id} HTTP/1.1
+POST /quote/{guid}/confirm HTTP/1.1
 
 Accept: application/json
 
@@ -2258,7 +2328,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.post '/quote/{id}',
+result = RestClient.post '/quote/{guid}/confirm',
   params: {
   }, headers: headers
 
@@ -2272,7 +2342,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.post('/quote/{id}', params={
+r = requests.post('/quote/{guid}/confirm', params={
 
 }, headers = headers)
 
@@ -2280,13 +2350,13 @@ print r.json()
 
 ```
 
-`POST /quote/{id}`
+`POST /quote/{guid}/confirm`
 
 <h3 id="confirm-a-quote-in-salesforce-and-send-it-to-zuora-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|id|path|string|true|The ID of a Salesforce quote|
+|guid|path|string|true|The ID of a Salesforce quote|
 
 > Example responses
 
@@ -3525,11 +3595,9 @@ print r.json()
       "rate_plans": [
         {
           "id": 0,
-          "quantity": 0,
           "charges": [
             {
-              "id": 0,
-              "quantity": 0
+              "id": 0
             }
           ]
         }
@@ -3537,21 +3605,19 @@ print r.json()
     }
   ],
   "account": {
+    "is_company": true,
     "company_name": "string",
-    "currency": "string",
     "first_name": "string",
     "last_name": "string",
     "street": "string",
-    "additional_info": "string",
     "zip_code": "string",
     "city": "string",
     "state": "string",
     "country": "string",
     "email": "string",
     "phone": "string",
-    "vat_id": "string",
+    "additional_info": "string",
     "has_billing_address": true,
-    "is_company": true,
     "billing_first_name": "string",
     "billing_last_name": "string",
     "billing_street": "string",
@@ -3560,15 +3626,15 @@ print r.json()
     "billing_city": "string",
     "billing_country": "string",
     "billing_email": "string",
-    "billing_phone": "string"
+    "billing_phone": "string",
+    "vat_id": "string",
+    "currency": "string"
   },
-  "currency": "string",
-  "voucher_rate_plans": [
-    {
-      "rate_plan_id": 0,
-      "campaign_id": 0
-    }
-  ]
+  "payment_method": {
+    "id": "string",
+    "type": "string",
+    "data": {}
+  }
 }
 ```
 
@@ -3691,41 +3757,21 @@ print r.json()
 
 ```json
 {
-  "suite_products": [
-    {
-      "id": 0,
-      "quantity": 0,
-      "order_pos": 0,
-      "rate_plans": [
-        {
-          "id": 0,
-          "quantity": 0,
-          "charges": [
-            {
-              "id": 0,
-              "quantity": 0
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "currency": "string",
   "account": {
+    "is_company": true,
     "company_name": "string",
-    "currency": "string",
     "first_name": "string",
     "last_name": "string",
     "street": "string",
-    "additional_info": "string",
     "zip_code": "string",
     "city": "string",
     "state": "string",
     "country": "string",
     "email": "string",
     "phone": "string",
-    "vat_id": "string",
+    "additional_info": "string",
     "has_billing_address": true,
-    "is_company": true,
     "billing_first_name": "string",
     "billing_last_name": "string",
     "billing_street": "string",
@@ -3734,13 +3780,15 @@ print r.json()
     "billing_city": "string",
     "billing_country": "string",
     "billing_email": "string",
-    "billing_phone": "string"
+    "billing_phone": "string",
+    "vat_id": "string",
+    "currency": "string"
   },
-  "currency": "string",
-  "voucher_rate_plans": [
+  "suite_products": [
     {
-      "rate_plan_id": 0,
-      "campaign_id": 0
+      "id": 0,
+      "quantity": 0,
+      "order_pos": 0
     }
   ]
 }
@@ -3750,7 +3798,7 @@ print r.json()
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[SubscribeOption](#schemasubscribeoption)|false|none|
+|body|body|[Preview](#schemapreview)|false|none|
 
 > Example responses
 
@@ -4360,6 +4408,660 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
+<h1 id="subscription-suite-api-auth">auth</h1>
+
+## Creates a new user.
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json"},
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "/register", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+POST /register HTTP/1.1
+
+Content-Type: application/json
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json',
+  'Accept' => 'application/json'
+}
+
+result = RestClient.post '/register',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+r = requests.post('/register', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`POST /register`
+
+> Body parameter
+
+```json
+{
+  "user": {
+    "email": "user@example.com",
+    "password": "pa$$word"
+  },
+  "redirect_url": "http://example.com",
+  "language": "string"
+}
+```
+
+<h3 id="creates-a-new-user.-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|The user to create.|
+|» user|body|object|true|none|
+|»» email|body|string(email)|false|none|
+|»» password|body|string(password)|false|none|
+|» redirect_url|body|string(uri)|false|none|
+|» language|body|string|false|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "token": "string",
+  "user": {
+    "id": "string",
+    "guid": "string"
+  }
+}
+```
+
+<h3 id="creates-a-new-user.-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad request|None|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<h3 id="creates-a-new-user.-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» token|string|false|none|none|
+|» user|object|false|none|none|
+|»» id|string|false|none|none|
+|»» guid|string|false|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Login with email and password
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json"},
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "/login", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+POST /login HTTP/1.1
+
+Content-Type: application/json
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json',
+  'Accept' => 'application/json'
+}
+
+result = RestClient.post '/login',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+r = requests.post('/login', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`POST /login`
+
+> Body parameter
+
+```json
+{
+  "email": "user@example.com",
+  "password": "pa$$word"
+}
+```
+
+<h3 id="login-with-email-and-password-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|[User](#schemauser)|true|Email and password as payload|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "token": "string",
+  "user": {
+    "id": "string",
+    "guid": "string",
+    "crm_id": "string"
+  }
+}
+```
+
+<h3 id="login-with-email-and-password-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad request|None|
+
+<h3 id="login-with-email-and-password-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» token|string|false|none|none|
+|» user|object|false|none|none|
+|»» id|string|false|none|none|
+|»» guid|string|false|none|none|
+|»» crm_id|string|false|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Login as guest
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "/login/guest", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+POST /login/guest HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.post '/login/guest',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.post('/login/guest', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`POST /login/guest`
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "token": "string",
+  "user": {
+    "guest": true
+  }
+}
+```
+
+<h3 id="login-as-guest-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns a guest token which expires after 12h|Inline|
+
+<h3 id="login-as-guest-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» token|string|false|none|none|
+|» user|object|false|none|none|
+|»» guest|boolean|false|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Logout
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "/logout", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+POST /logout HTTP/1.1
+
+Accept: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.post '/logout',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.post('/logout', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`POST /logout`
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "success": true
+}
+```
+
+<h3 id="logout-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not found|None|
+
+<h3 id="logout-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» success|boolean|false|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Initialise Password reset
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "/password-reset/init", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+POST /password-reset/init HTTP/1.1
+
+Content-Type: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json'
+}
+
+result = RestClient.post '/password-reset/init',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json'
+}
+
+r = requests.post('/password-reset/init', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`POST /password-reset/init`
+
+> Body parameter
+
+```json
+{
+  "email": "user@example.com"
+}
+```
+
+<h3 id="initialise-password-reset-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|Send the e-amil you want to reset the password for as payload|
+|» email|body|string(email)|true|none|
+
+<h3 id="initialise-password-reset-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Not found|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Comfirm the password reset
+
+> Code samples
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "/password-reset/confirm", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+```http
+POST /password-reset/confirm HTTP/1.1
+
+Content-Type: application/json
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json'
+}
+
+result = RestClient.post '/password-reset/confirm',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json'
+}
+
+r = requests.post('/password-reset/confirm', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+`POST /password-reset/confirm`
+
+> Body parameter
+
+```json
+{
+  "confirm_key": "string",
+  "password": "pa$$word"
+}
+```
+
+<h3 id="comfirm-the-password-reset-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|Send e-mail and confirm key as payload|
+|» confirm_key|body|string|false|none|
+|» password|body|string(password)|false|none|
+
+<h3 id="comfirm-the-password-reset-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad request|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
 <h1 id="subscription-suite-api-config">config</h1>
 
 ## Get Configuration for suite
@@ -4621,12 +5323,7 @@ This operation does not require authentication
 {
   "id": "string",
   "type": "string",
-  "credit_card_number": "string",
-  "credit_card_holder": "string",
-  "credit_card_expiration_month": 0,
-  "credit_card_expiration_year": 0,
-  "iban": "string",
-  "bank_account_holder": "string"
+  "data": {}
 }
 
 ```
@@ -4635,14 +5332,113 @@ This operation does not require authentication
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string|false|none|none|
-|type|string|false|none|none|
-|credit_card_number|string|false|none|none|
-|credit_card_holder|string|false|none|none|
-|credit_card_expiration_month|number|false|none|none|
-|credit_card_expiration_year|number|false|none|none|
-|iban|string|false|none|none|
-|bank_account_holder|string|false|none|none|
+|id|string|true|none|none|
+|type|string|true|none|none|
+|data|object|true|none|none|
+
+<h2 id="tocSaccountpaymentmethodcreditcard">AccountPaymentMethodCreditCard</h2>
+
+<a id="schemaaccountpaymentmethodcreditcard"></a>
+
+```json
+{
+  "id": "string",
+  "type": "string",
+  "data": {
+    "credit_card_mask_number": "string",
+    "credit_card_holder_name": "string"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|string|true|none|none|
+|type|string|true|none|none|
+|data|object|false|none|none|
+|» credit_card_mask_number|string|false|none|none|
+|» credit_card_holder_name|string|false|none|none|
+
+<h2 id="tocSaccountpaymentmethodbanktransfer">AccountPaymentMethodBankTransfer</h2>
+
+<a id="schemaaccountpaymentmethodbanktransfer"></a>
+
+```json
+{
+  "id": "string",
+  "type": "string",
+  "data": {
+    "bank_transfer_account_number_mask": "string",
+    "bank_transfer_account_name": "string"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|string|true|none|none|
+|type|string|true|none|none|
+|data|object|false|none|none|
+|» bank_transfer_account_number_mask|string|false|none|none|
+|» bank_transfer_account_name|string|false|none|none|
+
+<h2 id="tocSaccountpaymentmethodsepa">AccountPaymentMethodSepa</h2>
+
+<a id="schemaaccountpaymentmethodsepa"></a>
+
+```json
+{
+  "id": "string",
+  "type": "string",
+  "data": {
+    "bank_transfer_account_number_mask": "string",
+    "bank_transfer_account_name": "string"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|string|true|none|none|
+|type|string|true|none|none|
+|data|object|false|none|none|
+|» bank_transfer_account_number_mask|string|false|none|none|
+|» bank_transfer_account_name|string|false|none|none|
+
+<h2 id="tocSaccountpaymentmethodach">AccountPaymentMethodAch</h2>
+
+<a id="schemaaccountpaymentmethodach"></a>
+
+```json
+{
+  "id": "string",
+  "type": "string",
+  "data": {
+    "bank_transfer_account_number_mask": "string",
+    "bank_transfer_account_name": "string"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|string|true|none|none|
+|type|string|true|none|none|
+|data|object|false|none|none|
+|» bank_transfer_account_number_mask|string|false|none|none|
+|» bank_transfer_account_name|string|false|none|none|
 
 <h2 id="tocSaccount">Account</h2>
 
@@ -4650,21 +5446,19 @@ This operation does not require authentication
 
 ```json
 {
+  "is_company": true,
   "company_name": "string",
-  "currency": "string",
   "first_name": "string",
   "last_name": "string",
   "street": "string",
-  "additional_info": "string",
   "zip_code": "string",
   "city": "string",
   "state": "string",
   "country": "string",
   "email": "string",
   "phone": "string",
-  "vat_id": "string",
+  "additional_info": "string",
   "has_billing_address": true,
-  "is_company": true,
   "billing_first_name": "string",
   "billing_last_name": "string",
   "billing_street": "string",
@@ -4673,7 +5467,9 @@ This operation does not require authentication
   "billing_city": "string",
   "billing_country": "string",
   "billing_email": "string",
-  "billing_phone": "string"
+  "billing_phone": "string",
+  "vat_id": "string",
+  "currency": "string"
 }
 
 ```
@@ -4682,30 +5478,49 @@ This operation does not require authentication
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|company_name|string|true|none|none|
-|currency|string|false|none|none|
+|is_company|boolean|false|none|none|
+|company_name|string|false|none|none|
 |first_name|string|true|none|none|
 |last_name|string|true|none|none|
 |street|string|true|none|none|
-|additional_info|string|true|none|none|
 |zip_code|string|true|none|none|
 |city|string|true|none|none|
 |state|string|false|none|none|
 |country|string|true|none|none|
 |email|string|true|none|none|
 |phone|string|true|none|none|
+|additional_info|string|false|none|none|
+|has_billing_address|boolean|false|none|none|
+|billing_first_name|string|false|none|none|
+|billing_last_name|string|false|none|none|
+|billing_street|string|false|none|none|
+|billing_additional_info|string|false|none|none|
+|billing_zip_code|string|false|none|none|
+|billing_city|string|false|none|none|
+|billing_country|string|false|none|none|
+|billing_email|string|false|none|none|
+|billing_phone|string|false|none|none|
 |vat_id|string|true|none|none|
-|has_billing_address|boolean|true|none|none|
-|is_company|boolean|true|none|none|
-|billing_first_name|string|true|none|none|
-|billing_last_name|string|true|none|none|
-|billing_street|string|true|none|none|
-|billing_additional_info|string|true|none|none|
-|billing_zip_code|string|true|none|none|
-|billing_city|string|true|none|none|
-|billing_country|string|true|none|none|
-|billing_email|string|true|none|none|
-|billing_phone|string|true|none|none|
+|currency|string|false|none|none|
+
+<h2 id="tocSuser">User</h2>
+
+<a id="schemauser"></a>
+
+```json
+{
+  "email": "user@example.com",
+  "password": "pa$$word"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|false|none|none|
+|password|string(password)|false|none|none|
 
 <h2 id="tocSinvoice">Invoice</h2>
 
@@ -4714,8 +5529,8 @@ This operation does not require authentication
 ```json
 {
   "payment_amount": 0,
-  "invoice_date": "2019-04-21",
-  "due_date": "2019-04-21",
+  "invoice_date": "2019-05-21",
+  "due_date": "2019-05-21",
   "tax_amount": 0,
   "amount": 0,
   "balance": 0,
@@ -4927,7 +5742,7 @@ This operation does not require authentication
         ]
       }
     ],
-    "current_end_date": "2019-04-21"
+    "current_end_date": "2019-05-21"
   },
   "quantity": 0,
   "rate_plans": [
@@ -5187,7 +6002,7 @@ This operation does not require authentication
       ]
     }
   ],
-  "current_end_date": "2019-04-21"
+  "current_end_date": "2019-05-21"
 }
 
 ```
@@ -5557,7 +6372,7 @@ This operation does not require authentication
         ]
       }
     ],
-    "current_end_date": "2019-04-21"
+    "current_end_date": "2019-05-21"
   },
   "id": "string",
   "product_id": "string",
@@ -5964,6 +6779,79 @@ This operation does not require authentication
 |id|string|false|none|none|
 |type|string|false|none|none|
 
+<h2 id="tocSpreview">Preview</h2>
+
+<a id="schemapreview"></a>
+
+```json
+{
+  "currency": "string",
+  "account": {
+    "is_company": true,
+    "company_name": "string",
+    "first_name": "string",
+    "last_name": "string",
+    "street": "string",
+    "zip_code": "string",
+    "city": "string",
+    "state": "string",
+    "country": "string",
+    "email": "string",
+    "phone": "string",
+    "additional_info": "string",
+    "has_billing_address": true,
+    "billing_first_name": "string",
+    "billing_last_name": "string",
+    "billing_street": "string",
+    "billing_additional_info": "string",
+    "billing_zip_code": "string",
+    "billing_city": "string",
+    "billing_country": "string",
+    "billing_email": "string",
+    "billing_phone": "string",
+    "vat_id": "string",
+    "currency": "string"
+  },
+  "suite_products": [
+    {
+      "id": 0,
+      "quantity": 0,
+      "order_pos": 0
+    }
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|currency|string|false|none|none|
+|account|[Account](#schemaaccount)|false|none|none|
+|suite_products|[[PreviewSuiteProduct](#schemapreviewsuiteproduct)]|false|none|none|
+
+<h2 id="tocSpreviewsuiteproduct">PreviewSuiteProduct</h2>
+
+<a id="schemapreviewsuiteproduct"></a>
+
+```json
+{
+  "id": 0,
+  "quantity": 0,
+  "order_pos": 0
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|integer|true|none|none|
+|quantity|integer|true|none|none|
+|order_pos|integer|true|none|none|
+
 <h2 id="tocSsubscribeoption">SubscribeOption</h2>
 
 <a id="schemasubscribeoption"></a>
@@ -5978,11 +6866,9 @@ This operation does not require authentication
       "rate_plans": [
         {
           "id": 0,
-          "quantity": 0,
           "charges": [
             {
-              "id": 0,
-              "quantity": 0
+              "id": 0
             }
           ]
         }
@@ -5990,21 +6876,19 @@ This operation does not require authentication
     }
   ],
   "account": {
+    "is_company": true,
     "company_name": "string",
-    "currency": "string",
     "first_name": "string",
     "last_name": "string",
     "street": "string",
-    "additional_info": "string",
     "zip_code": "string",
     "city": "string",
     "state": "string",
     "country": "string",
     "email": "string",
     "phone": "string",
-    "vat_id": "string",
+    "additional_info": "string",
     "has_billing_address": true,
-    "is_company": true,
     "billing_first_name": "string",
     "billing_last_name": "string",
     "billing_street": "string",
@@ -6013,15 +6897,15 @@ This operation does not require authentication
     "billing_city": "string",
     "billing_country": "string",
     "billing_email": "string",
-    "billing_phone": "string"
+    "billing_phone": "string",
+    "vat_id": "string",
+    "currency": "string"
   },
-  "currency": "string",
-  "voucher_rate_plans": [
-    {
-      "rate_plan_id": 0,
-      "campaign_id": 0
-    }
-  ]
+  "payment_method": {
+    "id": "string",
+    "type": "string",
+    "data": {}
+  }
 }
 
 ```
@@ -6036,15 +6920,10 @@ This operation does not require authentication
 |» order_pos|integer|false|none|none|
 |» rate_plans|[object]|false|none|none|
 |»» id|integer|false|none|none|
-|»» quantity|integer|false|none|none|
 |»» charges|[object]|false|none|none|
 |»»» id|integer|false|none|none|
-|»»» quantity|integer|false|none|none|
 |»» account|[Account](#schemaaccount)|false|none|none|
-|»» currency|string|false|none|none|
-|»» voucher_rate_plans|[object]|false|none|none|
-|»»» rate_plan_id|integer|false|none|none|
-|»»» campaign_id|integer|false|none|none|
+|»» payment_method|[AccountPaymentMethod](#schemaaccountpaymentmethod)|false|none|none|
 
 <h2 id="tocSsubscribeoptionwithprice">SubscribeOptionWithPrice</h2>
 

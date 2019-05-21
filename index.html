@@ -14,7 +14,7 @@
     <link rel="stylesheet" media="screen" href="pub/css/screen.css">
     <link rel="stylesheet" media="print" href="pub/css/print.css">
     <link rel="stylesheet" media="screen" href="pub/css/darkula.css">
-
+    
       <script src="source/javascripts/lib/_jquery.js"></script>
 <script src="source/javascripts/lib/_energize.js"></script>
 <script src="source/javascripts/app/_lang.js"></script>
@@ -34,7 +34,7 @@ window.onpopstate = function() {
 };
 </script>
 
-
+    
     <meta name="theme-color" content="#F3F7F9" />
 
   </head>
@@ -47,419 +47,496 @@ window.onpopstate = function() {
       </span>
     </a>
     <div class="toc-wrapper">
-        <!-- <img src="source/images/logo.png" class="logo" alt="Logo"> -->
-        <div style="background-color: #fdfdfd">
-            <img src="pub/logo.png" class="logo" alt="Logo">
-        </div>
+      <img src="source/images/logo.png" class="logo" alt="Logo">
+      
         <div class="lang-selector">
-
-
+          
+            
               <a href="#" data-language-name="go">Go</a>
-
-
-
+            
+          
+            
               <a href="#" data-language-name="http">HTTP</a>
-
-
-
+            
+          
+            
               <a href="#" data-language-name="ruby">Ruby</a>
-
-
-
+            
+          
+            
               <a href="#" data-language-name="python">Python</a>
-
-
+            
+          
         </div>
-
-
+      
+      
       <div id="toc" class="toc-list-h1">
 	  	<ul class="toc-list-h1">
-
+        
           <li>
-            <a href="#subscription-suite-api" class="toc-h1 toc-link" data-title="Subscription Suite API v1.0.0">Subscription Suite API v1.0.0</a>
-
+            <a href="#subscription-suite-api" class="toc-h1 toc-link" data-title="Subscription Suite API v2.1.0">Subscription Suite API v2.1.0</a>
+            
           </li>
-
+        
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-account" class="toc-h1 toc-link" data-title="account">account</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-summarized-information-about-an-account--in-particular-name-and-the-address-information" class="toc-h2 toc-link" data-title="Get summarized information about an account, in particular name and the address information">Get summarized information about an account, in particular name and the address information</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#update-an-existing-account" class="toc-h2 toc-link" data-title="Update an existing account">Update an existing account</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-the-accounts-payment-method" class="toc-h2 toc-link" data-title="Get the accounts payment method">Get the accounts payment method</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#update-the-accounts-payment-method" class="toc-h2 toc-link" data-title="Update the Accounts payment method">Update the Accounts payment method</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-posted-invoices-for-a-user" class="toc-h2 toc-link" data-title="Get posted invoices for a user">Get posted invoices for a user</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-invoice-for-account-by-invoiceid" class="toc-h2 toc-link" data-title="Get Invoice for Account by InvoiceId">Get Invoice for Account by InvoiceId</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-subscriptions-for-a-user" class="toc-h2 toc-link" data-title="Get subscriptions for a user">Get subscriptions for a user</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#validate-a-vat-id" class="toc-h2 toc-link" data-title="Validate a VAT ID">Validate a VAT ID</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-rate-plans" class="toc-h2 toc-link" data-title="Get Rate Plans">Get Rate Plans</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-payment-method" class="toc-h1 toc-link" data-title="payment-method">payment-method</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-a-payment-method-by-zuora-id" class="toc-h2 toc-link" data-title="Get a payment method by Zuora Id">Get a payment method by Zuora Id</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-the-signature-to-render-a-zuora-payment-page-in-an-iframe" class="toc-h2 toc-link" data-title="Get the signature to render a Zuora payment page in an iFrame">Get the signature to render a Zuora payment page in an iFrame</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-the-available-payment-methods-for-a-certain-user-type" class="toc-h2 toc-link" data-title="Get the available payment methods for a certain user type">Get the available payment methods for a certain user type</a>
-
+                    
                   </li>
-
+                
+                  <li>
+                    <a href="#initialise-paypal-for-given-payment-method-id" class="toc-h2 toc-link" data-title="Initialise paypal for given payment method id">Initialise paypal for given payment method id</a>
+                    
+                  </li>
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-quote" class="toc-h1 toc-link" data-title="quote">quote</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-quote-data-from-salesforce" class="toc-h2 toc-link" data-title="Get quote data from Salesforce">Get quote data from Salesforce</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#confirm-a-quote-in-salesforce-and-send-it-to-zuora" class="toc-h2 toc-link" data-title="Confirm a quote in Salesforce and send it to Zuora">Confirm a quote in Salesforce and send it to Zuora</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-product-catalog" class="toc-h1 toc-link" data-title="product-catalog">product-catalog</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-all-zuora-products" class="toc-h2 toc-link" data-title="Get all Zuora products">Get all Zuora products</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-a-zuora-product" class="toc-h2 toc-link" data-title="Get a Zuora product">Get a Zuora product</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#delete-a-zuora-product" class="toc-h2 toc-link" data-title="Delete a Zuora product">Delete a Zuora product</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-shop" class="toc-h1 toc-link" data-title="shop">shop</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#fetches-all-relevant-information-to-display-a-shop-page" class="toc-h2 toc-link" data-title="Fetches all relevant information to display a shop page">Fetches all relevant information to display a shop page</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-subscription" class="toc-h1 toc-link" data-title="subscription">subscription</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#preview-of-cancel-operation" class="toc-h2 toc-link" data-title="Preview of Cancel Operation">Preview of Cancel Operation</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#preview-of-replace-operation" class="toc-h2 toc-link" data-title="Preview of Replace Operation">Preview of Replace Operation</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#replace-operation" class="toc-h2 toc-link" data-title="Replace Operation">Replace Operation</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#initilization-of-change-quantity-operation" class="toc-h2 toc-link" data-title="Initilization of Change Quantity Operation">Initilization of Change Quantity Operation</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#preview-of-change-quantity-operation" class="toc-h2 toc-link" data-title="Preview of Change Quantity Operation">Preview of Change Quantity Operation</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#create-new-subscriptions-for-a-user" class="toc-h2 toc-link" data-title="Create new subscriptions for a user">Create new subscriptions for a user</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#calculate-prices-for-selected-rate-plans--quantities--and-discounts" class="toc-h2 toc-link" data-title="Calculate prices for selected rate plans, quantities, and discounts">Calculate prices for selected rate plans, quantities, and discounts</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-translation" class="toc-h1 toc-link" data-title="translation">translation</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-static-translations-for-a-certain-language" class="toc-h2 toc-link" data-title="Get static translations for a certain language">Get static translations for a certain language</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#get-dynamic-translations-for-the-keys-specified-in-the-request-body" class="toc-h2 toc-link" data-title="Get dynamic translations for the keys specified in the request body">Get dynamic translations for the keys specified in the request body</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-voucher" class="toc-h1 toc-link" data-title="voucher">voucher</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#initialize-a-voucher-code-and-block-it-for-a-certain-user-in-case-of-a-single-use-code" class="toc-h2 toc-link" data-title="Initialize a voucher code and block it for a certain user in case of a single use code">Initialize a voucher code and block it for a certain user in case of a single use code</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#confirm-and-consume-a-voucher-code" class="toc-h2 toc-link" data-title="Confirm and consume a voucher code">Confirm and consume a voucher code</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
+          <li>
+            <a href="#subscription-suite-api-auth" class="toc-h1 toc-link" data-title="auth">auth</a>
+            
+              <ul class="toc-list-h2">
+                
+                  <li>
+                    <a href="#creates-a-new-user-" class="toc-h2 toc-link" data-title="Creates a new user.">Creates a new user.</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#login-with-email-and-password" class="toc-h2 toc-link" data-title="Login with email and password">Login with email and password</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#login-as-guest" class="toc-h2 toc-link" data-title="Login as guest">Login as guest</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#logout" class="toc-h2 toc-link" data-title="Logout">Logout</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#initialise-password-reset" class="toc-h2 toc-link" data-title="Initialise Password reset">Initialise Password reset</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#comfirm-the-password-reset" class="toc-h2 toc-link" data-title="Comfirm the password reset">Comfirm the password reset</a>
+                    
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
           <li>
             <a href="#subscription-suite-api-config" class="toc-h1 toc-link" data-title="config">config</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#get-configuration-for-suite" class="toc-h2 toc-link" data-title="Get Configuration for suite">Get Configuration for suite</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#subscription-suite-api-string" class="toc-h1 toc-link" data-title="string">string</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#change-quantity-operation" class="toc-h2 toc-link" data-title="Change Quantity Operation">Change Quantity Operation</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
           <li>
             <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
-
+            
               <ul class="toc-list-h2">
-
+                
                   <li>
                     <a href="#tocsaccountpaymentmethod" class="toc-h2 toc-link" data-title="AccountPaymentMethod">AccountPaymentMethod</a>
-
+                    
                   </li>
-
+                
+                  <li>
+                    <a href="#tocsaccountpaymentmethodcreditcard" class="toc-h2 toc-link" data-title="AccountPaymentMethodCreditCard">AccountPaymentMethodCreditCard</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocsaccountpaymentmethodbanktransfer" class="toc-h2 toc-link" data-title="AccountPaymentMethodBankTransfer">AccountPaymentMethodBankTransfer</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocsaccountpaymentmethodsepa" class="toc-h2 toc-link" data-title="AccountPaymentMethodSepa">AccountPaymentMethodSepa</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocsaccountpaymentmethodach" class="toc-h2 toc-link" data-title="AccountPaymentMethodAch">AccountPaymentMethodAch</a>
+                    
+                  </li>
+                
                   <li>
                     <a href="#tocsaccount" class="toc-h2 toc-link" data-title="Account">Account</a>
-
+                    
                   </li>
-
+                
+                  <li>
+                    <a href="#tocsuser" class="toc-h2 toc-link" data-title="User">User</a>
+                    
+                  </li>
+                
                   <li>
                     <a href="#tocsinvoice" class="toc-h2 toc-link" data-title="Invoice">Invoice</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssuiteproduct" class="toc-h2 toc-link" data-title="SuiteProduct">SuiteProduct</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscription" class="toc-h2 toc-link" data-title="Subscription">Subscription</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsaccountrateplan" class="toc-h2 toc-link" data-title="AccountRatePlan">AccountRatePlan</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsrateplancharge" class="toc-h2 toc-link" data-title="RatePlanCharge">RatePlanCharge</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscriptionproductfeature" class="toc-h2 toc-link" data-title="SubscriptionProductFeature">SubscriptionProductFeature</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscriptionandrateplan" class="toc-h2 toc-link" data-title="SubscriptionAndRatePlan">SubscriptionAndRatePlan</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsconfig" class="toc-h2 toc-link" data-title="Config">Config</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocslanguage" class="toc-h2 toc-link" data-title="Language">Language</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscurrency" class="toc-h2 toc-link" data-title="Currency">Currency</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscartsettings" class="toc-h2 toc-link" data-title="CartSettings">CartSettings</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscheckoutsettings" class="toc-h2 toc-link" data-title="CheckoutSettings">CheckoutSettings</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscustomercentersettings" class="toc-h2 toc-link" data-title="CustomerCenterSettings">CustomerCenterSettings</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocscontact" class="toc-h2 toc-link" data-title="Contact">Contact</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocspaymentmethod" class="toc-h2 toc-link" data-title="PaymentMethod">PaymentMethod</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsproduct" class="toc-h2 toc-link" data-title="Product">Product</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocsrateplan" class="toc-h2 toc-link" data-title="RatePlan">RatePlan</a>
-
+                    
                   </li>
-
+                
+                  <li>
+                    <a href="#tocspreview" class="toc-h2 toc-link" data-title="Preview">Preview</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocspreviewsuiteproduct" class="toc-h2 toc-link" data-title="PreviewSuiteProduct">PreviewSuiteProduct</a>
+                    
+                  </li>
+                
                   <li>
                     <a href="#tocssubscribeoption" class="toc-h2 toc-link" data-title="SubscribeOption">SubscribeOption</a>
-
+                    
                   </li>
-
+                
                   <li>
                     <a href="#tocssubscribeoptionwithprice" class="toc-h2 toc-link" data-title="SubscribeOptionWithPrice">SubscribeOptionWithPrice</a>
-
+                    
                   </li>
-
+                
               </ul>
-
+            
           </li>
-
+        
 		</ul>
       </div>
-
+      
         <ul class="toc-footer">
-
+          
         </ul>
-
+      
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="subscription-suite-api">Subscription Suite API v1.0.0</h1>
+        <h1 id="subscription-suite-api">Subscription Suite API v2.1.0</h1>
 <blockquote>
 <p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
 </blockquote>
-<p>This is the API that is used by the Subscription Suite Angular 6 frontend components. You can find out more about Subscription Suite at <a href="https://www.subscription-suite.com">https://www.subscription-suite.com</a>.</p>
+<p>This is the API that is used by the Subscription Suite Angular 7 frontend components. You can find out more about Subscription Suite at <a href="https://www.subscription-suite.com">https://www.subscription-suite.com</a>.</p>
 <p>Email: <a href="mailto:hello@keylight.de">Support</a></p>
 <h1 id="authentication">Authentication</h1>
 <ul>
@@ -491,7 +568,7 @@ window.onpopstate = function() {
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -545,21 +622,19 @@ r = requests.get(<span class="hljs-string">'/account'</span>, params={
 <p>200 Response</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
@@ -568,7 +643,9 @@ r = requests.get(<span class="hljs-string">'/account'</span>, params={
   <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>
 }
 </code></pre>
 <h3 id="get-summarized-information-about-an-account--in-particular-name-and-the-address-information-responses">Responses</h3>
@@ -618,7 +695,7 @@ jwtAuth, cookieAuth
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -672,21 +749,19 @@ r = requests.put(<span class="hljs-string">'/account'</span>, params={
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
@@ -695,7 +770,9 @@ r = requests.put(<span class="hljs-string">'/account'</span>, params={
   <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>
 }
 </code></pre>
 <h3 id="update-an-existing-account-parameters">Parameters</h3>
@@ -803,7 +880,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -859,12 +936,7 @@ r = requests.get(<span class="hljs-string">'/account/payment-method'</span>, par
 <pre class="highlight tab tab-json"><code>{
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"credit_card_number"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"credit_card_holder"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"credit_card_expiration_month"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"credit_card_expiration_year"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"iban"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"bank_account_holder"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"data"</span>: {}
 }
 </code></pre>
 <h3 id="get-the-accounts-payment-method-responses">Responses</h3>
@@ -908,7 +980,7 @@ jwtAuth, cookieAuth
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -962,10 +1034,11 @@ r = requests.put(<span class="hljs-string">'/account/payment-method'</span>, par
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"data"</span>: {
-    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"token"</span>: <span class="hljs-string">"string"</span>
+    <span class="hljs-attr">"bank_transfer_account_number_mask"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"bank_transfer_account_name"</span>: <span class="hljs-string">"string"</span>
   }
 }
 </code></pre>
@@ -984,7 +1057,7 @@ r = requests.put(<span class="hljs-string">'/account/payment-method'</span>, par
 <tr>
 <td>body</td>
 <td>body</td>
-<td><a href="#schemapaymentmethod">PaymentMethod</a></td>
+<td>any</td>
 <td>true</td>
 <td>none</td>
 </tr>
@@ -1074,7 +1147,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -1130,8 +1203,8 @@ r = requests.get(<span class="hljs-string">'/account/invoice'</span>, params={
 <pre class="highlight tab tab-json"><code>[
   {
     <span class="hljs-attr">"payment_amount"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
-    <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
+    <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-05-21"</span>,
+    <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-05-21"</span>,
     <span class="hljs-attr">"tax_amount"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"amount"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"balance"</span>: <span class="hljs-number">0</span>,
@@ -1271,7 +1344,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/pdf"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -1391,7 +1464,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -1627,7 +1700,7 @@ r = requests.get(<span class="hljs-string">'/account/subscription'</span>, param
           ]
         }
       ],
-      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
+      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-05-21"</span>
     },
     <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">"rate_plans"</span>: [
@@ -2598,7 +2671,7 @@ jwtAuth, cookieAuth
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -2735,7 +2808,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -2932,7 +3005,7 @@ r = requests.get(<span class="hljs-string">'/account/rate-plan'</span>, params={
           ]
         }
       ],
-      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
+      <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-05-21"</span>
     },
     <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"string"</span>,
@@ -3675,11 +3748,11 @@ jwtAuth, cookieAuth
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/payment-method/{id}"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/payment-method/{paymentMethodId}"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -3688,7 +3761,7 @@ jwtAuth, cookieAuth
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/payment-method/{id}</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/payment-method/{paymentMethodId}</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -3700,7 +3773,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/payment-method/{id}'</span>,
+result = RestClient.get <span class="hljs-string">'/payment-method/{paymentMethodId}'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -3712,14 +3785,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/payment-method/{id}'</span>, params={
+r = requests.get(<span class="hljs-string">'/payment-method/{paymentMethodId}'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /payment-method/{id}</code></p>
+<p><code>GET /payment-method/{paymentMethodId}</code></p>
 <h3 id="get-a-payment-method-by-zuora-id-parameters">Parameters</h3>
 <table>
 <thead>
@@ -3733,7 +3806,7 @@ r = requests.get(<span class="hljs-string">'/payment-method/{id}'</span>, params
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>paymentMethodId</td>
 <td>path</td>
 <td>string</td>
 <td>true</td>
@@ -3799,11 +3872,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/payment-method/{id}/signature"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/payment-method/{paymentMethodId}/signature"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -3812,7 +3885,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/payment-method/{id}/signature</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/payment-method/{paymentMethodId}/signature</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -3824,7 +3897,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/payment-method/{id}/signature'</span>,
+result = RestClient.get <span class="hljs-string">'/payment-method/{paymentMethodId}/signature'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -3836,14 +3909,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/payment-method/{id}/signature'</span>, params={
+r = requests.get(<span class="hljs-string">'/payment-method/{paymentMethodId}/signature'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /payment-method/{id}/signature</code></p>
+<p><code>GET /payment-method/{paymentMethodId}/signature</code></p>
 <h3 id="get-the-signature-to-render-a-zuora-payment-page-in-an-iframe-parameters">Parameters</h3>
 <table>
 <thead>
@@ -3857,9 +3930,9 @@ r = requests.get(<span class="hljs-string">'/payment-method/{id}/signature'</spa
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>paymentMethodId</td>
 <td>path</td>
-<td>integer</td>
+<td>string</td>
 <td>true</td>
 <td>The ID of a Subscription Suite payment method</td>
 </tr>
@@ -3980,7 +4053,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -4110,6 +4183,102 @@ r = requests.get(<span class="hljs-string">'/payment-method/available'</span>, p
 <aside class="success">
 This operation does not require authentication
 </aside>
+<h2 id="initialise-paypal-for-given-payment-method-id">Initialise paypal for given payment method id</h2>
+<p><a id="opIdpaypalInit"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/payment-method/{paymentMethodId}/paypal/init"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/payment-method/{paymentMethodId}/paypal/init</span> HTTP/1.1
+
+<span class="undefined"></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+result = RestClient.get <span class="hljs-string">'/payment-method/{paymentMethodId}/paypal/init'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+
+r = requests.get(<span class="hljs-string">'/payment-method/{paymentMethodId}/paypal/init'</span>, params={
+
+)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>GET /payment-method/{paymentMethodId}/paypal/init</code></p>
+<h3 id="initialise-paypal-for-given-payment-method-id-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paymentMethodId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>Id of the payment Method</td>
+</tr>
+</tbody>
+</table>
+<h3 id="initialise-paypal-for-given-payment-method-id-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad request</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
 <h1 id="subscription-suite-api-quote">quote</h1>
 <p>Quote acceptance processes with Salesforce integration</p>
 <h2 id="get-quote-data-from-salesforce">Get quote data from Salesforce</h2>
@@ -4128,11 +4297,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/quote/{id}"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/quote/{guid}"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -4141,7 +4310,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/quote/{id}</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">GET</span> <span class="hljs-string">/quote/{guid}</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -4153,7 +4322,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.get <span class="hljs-string">'/quote/{id}'</span>,
+result = RestClient.get <span class="hljs-string">'/quote/{guid}'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -4165,14 +4334,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
+r = requests.get(<span class="hljs-string">'/quote/{guid}'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>GET /quote/{id}</code></p>
+<p><code>GET /quote/{guid}</code></p>
 <h3 id="get-quote-data-from-salesforce-parameters">Parameters</h3>
 <table>
 <thead>
@@ -4186,11 +4355,11 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>guid</td>
 <td>path</td>
 <td>string</td>
 <td>true</td>
-<td>The ID of a Salesforce quote</td>
+<td>The GUID of a Salesforce quote</td>
 </tr>
 </tbody>
 </table>
@@ -4240,9 +4409,9 @@ r = requests.get(<span class="hljs-string">'/quote/{id}'</span>, params={
     <span class="hljs-attr">"work_phone"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>
   },
-  <span class="hljs-attr">"start_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
+  <span class="hljs-attr">"start_date"</span>: <span class="hljs-string">"2019-05-21"</span>,
   <span class="hljs-attr">"term"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"valid_until_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
+  <span class="hljs-attr">"valid_until_date"</span>: <span class="hljs-string">"2019-05-21"</span>,
   <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>
 }
 </code></pre>
@@ -4480,11 +4649,11 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
-    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/quote/{id}"</span>, data)
+    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/quote/{guid}/confirm"</span>, data)
     req.Header = headers
 
     client := &amp;http.Client{}
@@ -4493,7 +4662,7 @@ This operation does not require authentication
 }
 
 </code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/quote/{id}</span> HTTP/1.1
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/quote/{guid}/confirm</span> HTTP/1.1
 
 <span class="http"><span class="hljs-attribute">Accept</span>: application/json
 
@@ -4505,7 +4674,7 @@ headers = {
   <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
 }
 
-result = RestClient.post <span class="hljs-string">'/quote/{id}'</span>,
+result = RestClient.post <span class="hljs-string">'/quote/{guid}/confirm'</span>,
   <span class="hljs-symbol">params:</span> {
   }, <span class="hljs-symbol">headers:</span> headers
 
@@ -4517,14 +4686,14 @@ headers = {
   <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
 }
 
-r = requests.post(<span class="hljs-string">'/quote/{id}'</span>, params={
+r = requests.post(<span class="hljs-string">'/quote/{guid}/confirm'</span>, params={
 
 }, headers = headers)
 
 <span class="hljs-keyword">print</span> r.json()
 
 </code></pre>
-<p><code>POST /quote/{id}</code></p>
+<p><code>POST /quote/{guid}/confirm</code></p>
 <h3 id="confirm-a-quote-in-salesforce-and-send-it-to-zuora-parameters">Parameters</h3>
 <table>
 <thead>
@@ -4538,7 +4707,7 @@ r = requests.post(<span class="hljs-string">'/quote/{id}'</span>, params={
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>guid</td>
 <td>path</td>
 <td>string</td>
 <td>true</td>
@@ -4624,7 +4793,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -4828,7 +4997,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -4958,7 +5127,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -5090,7 +5259,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -5671,7 +5840,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -5801,7 +5970,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -5938,7 +6107,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6075,7 +6244,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6205,7 +6374,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6344,7 +6513,7 @@ This operation does not require authentication
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Authorization"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"Bearer {access-token}"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6406,11 +6575,9 @@ r = requests.post(<span class="hljs-string">'/subscription'</span>, params={
       <span class="hljs-attr">"rate_plans"</span>: [
         {
           <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
           <span class="hljs-attr">"charges"</span>: [
             {
-              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
+              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>
             }
           ]
         }
@@ -6418,21 +6585,19 @@ r = requests.post(<span class="hljs-string">'/subscription'</span>, params={
     }
   ],
   <span class="hljs-attr">"account"</span>: {
+    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
@@ -6441,15 +6606,15 @@ r = requests.post(<span class="hljs-string">'/subscription'</span>, params={
     <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>
   },
-  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"voucher_rate_plans"</span>: [
-    {
-      <span class="hljs-attr">"rate_plan_id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>
-    }
-  ]
+  <span class="hljs-attr">"payment_method"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"data"</span>: {}
+  }
 }
 </code></pre>
 <h3 id="create-new-subscriptions-for-a-user-parameters">Parameters</h3>
@@ -6561,7 +6726,7 @@ jwtAuth, cookieAuth
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -6613,41 +6778,21 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"suite_products"</span>: [
-    {
-      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"rate_plans"</span>: [
-        {
-          <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"charges"</span>: [
-            {
-              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"account"</span>: {
+    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
@@ -6656,13 +6801,15 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
     <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>
   },
-  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"voucher_rate_plans"</span>: [
+  <span class="hljs-attr">"suite_products"</span>: [
     {
-      <span class="hljs-attr">"rate_plan_id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>
     }
   ]
 }
@@ -6682,7 +6829,7 @@ r = requests.post(<span class="hljs-string">'/subscription/preview'</span>, para
 <tr>
 <td>body</td>
 <td>body</td>
-<td><a href="#schemasubscribeoption">SubscribeOption</a></td>
+<td><a href="#schemapreview">Preview</a></td>
 <td>false</td>
 <td>none</td>
 </tr>
@@ -7068,7 +7215,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7216,7 +7363,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7383,7 +7530,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7574,7 +7721,7 @@ This operation does not require authentication
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7748,6 +7895,921 @@ r = requests.post(<span class="hljs-string">'/voucher-code/{code}/consume'</span
 <aside class="success">
 This operation does not require authentication
 </aside>
+<h1 id="subscription-suite-api-auth">auth</h1>
+<h2 id="creates-a-new-user-">Creates a new user.</h2>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/register"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/register</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Content-Type</span>: application/json
+<span class="hljs-attribute">Accept</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Content-Type'</span> =&gt; <span class="hljs-string">'application/json'</span>,
+  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.post <span class="hljs-string">'/register'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>,
+  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.post(<span class="hljs-string">'/register'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>POST /register</code></p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"user"</span>: {
+    <span class="hljs-attr">"email"</span>: <span class="hljs-string">"user@example.com"</span>,
+    <span class="hljs-attr">"password"</span>: <span class="hljs-string">"pa$$word"</span>
+  },
+  <span class="hljs-attr">"redirect_url"</span>: <span class="hljs-string">"http://example.com"</span>,
+  <span class="hljs-attr">"language"</span>: <span class="hljs-string">"string"</span>
+}
+</code></pre>
+<h3 id="creates-a-new-user--parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body</td>
+<td>body</td>
+<td>object</td>
+<td>true</td>
+<td>The user to create.</td>
+</tr>
+<tr>
+<td>» user</td>
+<td>body</td>
+<td>object</td>
+<td>true</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» email</td>
+<td>body</td>
+<td>string(email)</td>
+<td>false</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» password</td>
+<td>body</td>
+<td>string(password)</td>
+<td>false</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» redirect_url</td>
+<td>body</td>
+<td>string(uri)</td>
+<td>false</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» language</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"token"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"user"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"guid"</span>: <span class="hljs-string">"string"</span>
+  }
+}
+</code></pre>
+<h3 id="creates-a-new-user--responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad request</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Not found</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="creates-a-new-user--responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» token</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» user</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» guid</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h2 id="login-with-email-and-password">Login with email and password</h2>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/login"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/login</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Content-Type</span>: application/json
+<span class="hljs-attribute">Accept</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Content-Type'</span> =&gt; <span class="hljs-string">'application/json'</span>,
+  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.post <span class="hljs-string">'/login'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>,
+  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.post(<span class="hljs-string">'/login'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>POST /login</code></p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"email"</span>: <span class="hljs-string">"user@example.com"</span>,
+  <span class="hljs-attr">"password"</span>: <span class="hljs-string">"pa$$word"</span>
+}
+</code></pre>
+<h3 id="login-with-email-and-password-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body</td>
+<td>body</td>
+<td><a href="#schemauser">User</a></td>
+<td>true</td>
+<td>Email and password as payload</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"token"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"user"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"guid"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"crm_id"</span>: <span class="hljs-string">"string"</span>
+  }
+}
+</code></pre>
+<h3 id="login-with-email-and-password-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad request</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="login-with-email-and-password-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» token</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» user</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» guid</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» crm_id</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h2 id="login-as-guest">Login as guest</h2>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/login/guest"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/login/guest</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Accept</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.post <span class="hljs-string">'/login/guest'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.post(<span class="hljs-string">'/login/guest'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>POST /login/guest</code></p>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"token"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"user"</span>: {
+    <span class="hljs-attr">"guest"</span>: <span class="hljs-literal">true</span>
+  }
+}
+</code></pre>
+<h3 id="login-as-guest-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Returns a guest token which expires after 12h</td>
+<td>Inline</td>
+</tr>
+</tbody>
+</table>
+<h3 id="login-as-guest-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» token</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» user</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>»» guest</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h2 id="logout">Logout</h2>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/logout"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/logout</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Accept</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Accept'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.post <span class="hljs-string">'/logout'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Accept'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.post(<span class="hljs-string">'/logout'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>POST /logout</code></p>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"success"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<h3 id="logout-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Not found</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logout-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» success</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h2 id="initialise-password-reset">Initialise Password reset</h2>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/password-reset/init"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/password-reset/init</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Content-Type</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Content-Type'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.post <span class="hljs-string">'/password-reset/init'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.post(<span class="hljs-string">'/password-reset/init'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>POST /password-reset/init</code></p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"email"</span>: <span class="hljs-string">"user@example.com"</span>
+}
+</code></pre>
+<h3 id="initialise-password-reset-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body</td>
+<td>body</td>
+<td>object</td>
+<td>true</td>
+<td>Send the e-amil you want to reset the password for as payload</td>
+</tr>
+<tr>
+<td>» email</td>
+<td>body</td>
+<td>string(email)</td>
+<td>true</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h3 id="initialise-password-reset-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Not found</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h2 id="comfirm-the-password-reset">Comfirm the password reset</h2>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-go"><code><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+       <span class="hljs-string">"bytes"</span>
+       <span class="hljs-string">"net/http"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+
+    headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">"Content-Type"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
+        
+    }
+
+    data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
+    req, err := http.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/password-reset/confirm"</span>, data)
+    req.Header = headers
+
+    client := &amp;http.Client{}
+    resp, err := client.Do(req)
+    <span class="hljs-comment">// ...</span>
+}
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">/password-reset/confirm</span> HTTP/1.1
+
+<span class="http"><span class="hljs-attribute">Content-Type</span>: application/json
+
+<span class="undefined"></span></span></code></pre>
+<pre class="highlight tab tab-ruby"><code><span class="hljs-keyword">require</span> <span class="hljs-string">'rest-client'</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span>
+
+headers = {
+  <span class="hljs-string">'Content-Type'</span> =&gt; <span class="hljs-string">'application/json'</span>
+}
+
+result = RestClient.post <span class="hljs-string">'/password-reset/confirm'</span>,
+  <span class="hljs-symbol">params:</span> {
+  }, <span class="hljs-symbol">headers:</span> headers
+
+p JSON.parse(result)
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>
+}
+
+r = requests.post(<span class="hljs-string">'/password-reset/confirm'</span>, params={
+
+}, headers = headers)
+
+<span class="hljs-keyword">print</span> r.json()
+
+</code></pre>
+<p><code>POST /password-reset/confirm</code></p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"confirm_key"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"password"</span>: <span class="hljs-string">"pa$$word"</span>
+}
+</code></pre>
+<h3 id="comfirm-the-password-reset-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body</td>
+<td>body</td>
+<td>object</td>
+<td>true</td>
+<td>Send e-mail and confirm key as payload</td>
+</tr>
+<tr>
+<td>» confirm_key</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» password</td>
+<td>body</td>
+<td>string(password)</td>
+<td>false</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h3 id="comfirm-the-password-reset-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad request</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="success">
+This operation does not require authentication
+</aside>
 <h1 id="subscription-suite-api-config">config</h1>
 <h2 id="get-configuration-for-suite">Get Configuration for suite</h2>
 <p><a id="opIdconfig"></a></p>
@@ -7765,7 +8827,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -7906,7 +8968,7 @@ This operation does not require authentication
 
     headers := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">string</span>{
         <span class="hljs-string">"Accept"</span>: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"application/json"</span>},
-
+        
     }
 
     data := bytes.NewBuffer([]<span class="hljs-keyword">byte</span>{jsonReq})
@@ -8033,12 +9095,7 @@ This operation does not require authentication
 <pre class="highlight tab tab-json"><code>{
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"credit_card_number"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"credit_card_holder"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"credit_card_expiration_month"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"credit_card_expiration_year"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"iban"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"bank_account_holder"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"data"</span>: {}
 }
 
 </code></pre>
@@ -8057,88 +9114,35 @@ This operation does not require authentication
 <tr>
 <td>id</td>
 <td>string</td>
-<td>false</td>
+<td>true</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>type</td>
 <td>string</td>
-<td>false</td>
+<td>true</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>credit_card_number</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>credit_card_holder</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>credit_card_expiration_month</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>credit_card_expiration_year</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>iban</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>bank_account_holder</td>
-<td>string</td>
-<td>false</td>
+<td>data</td>
+<td>object</td>
+<td>true</td>
 <td>none</td>
 <td>none</td>
 </tr>
 </tbody>
 </table>
-<h2 id="tocsaccount">Account</h2>
-<p><a id="schemaaccount"></a></p>
+<h2 id="tocsaccountpaymentmethodcreditcard">AccountPaymentMethodCreditCard</h2>
+<p><a id="schemaaccountpaymentmethodcreditcard"></a></p>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_additional_info"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_zip_code"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"credit_card_mask_number"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"credit_card_holder_name"</span>: <span class="hljs-string">"string"</span>
+  }
 }
 
 </code></pre>
@@ -8155,14 +9159,276 @@ This operation does not require authentication
 </thead>
 <tbody>
 <tr>
-<td>company_name</td>
+<td>id</td>
 <td>string</td>
 <td>true</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>currency</td>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>data</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» credit_card_mask_number</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» credit_card_holder_name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocsaccountpaymentmethodbanktransfer">AccountPaymentMethodBankTransfer</h2>
+<p><a id="schemaaccountpaymentmethodbanktransfer"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"bank_transfer_account_number_mask"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"bank_transfer_account_name"</span>: <span class="hljs-string">"string"</span>
+  }
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>data</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» bank_transfer_account_number_mask</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» bank_transfer_account_name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocsaccountpaymentmethodsepa">AccountPaymentMethodSepa</h2>
+<p><a id="schemaaccountpaymentmethodsepa"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"bank_transfer_account_number_mask"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"bank_transfer_account_name"</span>: <span class="hljs-string">"string"</span>
+  }
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>data</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» bank_transfer_account_number_mask</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» bank_transfer_account_name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocsaccountpaymentmethodach">AccountPaymentMethodAch</h2>
+<p><a id="schemaaccountpaymentmethodach"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"bank_transfer_account_number_mask"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"bank_transfer_account_name"</span>: <span class="hljs-string">"string"</span>
+  }
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>data</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» bank_transfer_account_number_mask</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» bank_transfer_account_name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocsaccount">Account</h2>
+<p><a id="schemaaccount"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_additional_info"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_zip_code"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>is_company</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>company_name</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
@@ -8184,13 +9450,6 @@ This operation does not require authentication
 </tr>
 <tr>
 <td>street</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>additional_info</td>
 <td>string</td>
 <td>true</td>
 <td>none</td>
@@ -8239,6 +9498,83 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
+<td>additional_info</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>has_billing_address</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_first_name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_last_name</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_street</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_additional_info</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_zip_code</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_city</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_country</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_email</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>billing_phone</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
 <td>vat_id</td>
 <td>string</td>
 <td>true</td>
@@ -8246,79 +9582,45 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>has_billing_address</td>
-<td>boolean</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>is_company</td>
-<td>boolean</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_first_name</td>
+<td>currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocsuser">User</h2>
+<p><a id="schemauser"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"email"</span>: <span class="hljs-string">"user@example.com"</span>,
+  <span class="hljs-attr">"password"</span>: <span class="hljs-string">"pa$$word"</span>
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>string(email)</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>billing_last_name</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_street</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_additional_info</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_zip_code</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_city</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_country</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_email</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>billing_phone</td>
-<td>string</td>
-<td>true</td>
+<td>password</td>
+<td>string(password)</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -8328,8 +9630,8 @@ This operation does not require authentication
 <p><a id="schemainvoice"></a></p>
 <pre class="highlight tab tab-json"><code>{
   <span class="hljs-attr">"payment_amount"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
-  <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-04-21"</span>,
+  <span class="hljs-attr">"invoice_date"</span>: <span class="hljs-string">"2019-05-21"</span>,
+  <span class="hljs-attr">"due_date"</span>: <span class="hljs-string">"2019-05-21"</span>,
   <span class="hljs-attr">"tax_amount"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"amount"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"balance"</span>: <span class="hljs-number">0</span>,
@@ -8600,7 +9902,7 @@ This operation does not require authentication
         ]
       }
     ],
-    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
+    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-05-21"</span>
   },
   <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
   <span class="hljs-attr">"rate_plans"</span>: [
@@ -9123,7 +10425,7 @@ This operation does not require authentication
       ]
     }
   ],
-  <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
+  <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-05-21"</span>
 }
 
 </code></pre>
@@ -9975,7 +11277,7 @@ This operation does not require authentication
         ]
       }
     ],
-    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-04-21"</span>
+    <span class="hljs-attr">"current_end_date"</span>: <span class="hljs-string">"2019-05-21"</span>
   },
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
   <span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"string"</span>,
@@ -10920,6 +12222,125 @@ This operation does not require authentication
 </tr>
 </tbody>
 </table>
+<h2 id="tocspreview">Preview</h2>
+<p><a id="schemapreview"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-attr">"account"</span>: {
+    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_additional_info"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_zip_code"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>
+  },
+  <span class="hljs-attr">"suite_products"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>
+    }
+  ]
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>account</td>
+<td><a href="#schemaaccount">Account</a></td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>suite_products</td>
+<td>[<a href="#schemapreviewsuiteproduct">PreviewSuiteProduct</a>]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocspreviewsuiteproduct">PreviewSuiteProduct</h2>
+<p><a id="schemapreviewsuiteproduct"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"order_pos"</span>: <span class="hljs-number">0</span>
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>integer</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>integer</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>order_pos</td>
+<td>integer</td>
+<td>true</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
 <h2 id="tocssubscribeoption">SubscribeOption</h2>
 <p><a id="schemasubscribeoption"></a></p>
 <pre class="highlight tab tab-json"><code>{
@@ -10931,11 +12352,9 @@ This operation does not require authentication
       <span class="hljs-attr">"rate_plans"</span>: [
         {
           <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-          <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>,
           <span class="hljs-attr">"charges"</span>: [
             {
-              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-              <span class="hljs-attr">"quantity"</span>: <span class="hljs-number">0</span>
+              <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>
             }
           ]
         }
@@ -10943,21 +12362,19 @@ This operation does not require authentication
     }
   ],
   <span class="hljs-attr">"account"</span>: {
+    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">"company_name"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"first_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"street"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"zip_code"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"state"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"email"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"additional_info"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"has_billing_address"</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">"is_company"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">"billing_first_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_last_name"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_street"</span>: <span class="hljs-string">"string"</span>,
@@ -10966,15 +12383,15 @@ This operation does not require authentication
     <span class="hljs-attr">"billing_city"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_country"</span>: <span class="hljs-string">"string"</span>,
     <span class="hljs-attr">"billing_email"</span>: <span class="hljs-string">"string"</span>,
-    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>
+    <span class="hljs-attr">"billing_phone"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"vat_id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>
   },
-  <span class="hljs-attr">"currency"</span>: <span class="hljs-string">"string"</span>,
-  <span class="hljs-attr">"voucher_rate_plans"</span>: [
-    {
-      <span class="hljs-attr">"rate_plan_id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"campaign_id"</span>: <span class="hljs-number">0</span>
-    }
-  ]
+  <span class="hljs-attr">"payment_method"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
+    <span class="hljs-attr">"data"</span>: {}
+  }
 }
 
 </code></pre>
@@ -11033,13 +12450,6 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>»» quantity</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
 <td>»» charges</td>
 <td>[object]</td>
 <td>false</td>
@@ -11054,13 +12464,6 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>»»» quantity</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
 <td>»» account</td>
 <td><a href="#schemaaccount">Account</a></td>
 <td>false</td>
@@ -11068,29 +12471,8 @@ This operation does not require authentication
 <td>none</td>
 </tr>
 <tr>
-<td>»» currency</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» voucher_rate_plans</td>
-<td>[object]</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» rate_plan_id</td>
-<td>integer</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»»» campaign_id</td>
-<td>integer</td>
+<td>»» payment_method</td>
+<td><a href="#schemaaccountpaymentmethod">AccountPaymentMethod</a></td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
@@ -11421,27 +12803,27 @@ This operation does not require authentication
 
       </div>
       <div class="dark-box">
-
+        
           <div class="lang-selector">
-
-
+            
+              
                 <a href="#" data-language-name="go">Go</a>
-
-
-
+              
+            
+              
                 <a href="#" data-language-name="http">HTTP</a>
-
-
-
+              
+            
+              
                 <a href="#" data-language-name="ruby">Ruby</a>
-
-
-
+              
+            
+              
                 <a href="#" data-language-name="python">Python</a>
-
-
+              
+            
           </div>
-
+        
       </div>
     </div>
   </body>
